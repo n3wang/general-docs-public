@@ -30,6 +30,19 @@ Simple for generating and discussing code
 codellama:latest
 ```
 
+```
+ollama run borch/phi3_speed_chat
+```
+
+
+```
+stable-code:latest
+```
+
+stable-code
+
+
+
 
 To look at nvidia
 ```
