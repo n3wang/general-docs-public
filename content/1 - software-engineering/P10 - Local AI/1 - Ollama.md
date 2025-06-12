@@ -50,4 +50,12 @@ watch -n 0.5 nvidia-smi
 ```
 
 
-### 
+### Installing MCPHost
+
+Install go:
+
+https://go.dev/dl/
+
+```
+go install github.com/mark3labs/mcphost@latest
+```
