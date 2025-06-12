@@ -159,3 +159,13 @@ $HOME/go/bin/mcphost -m ollama:llama2 --config mcp.config.json
 ```
 
 
+
+### Using Visual Clients
+
+- Does ollaa visual client support this?
+
+
+Lets say
+
+http://github.com/open-webui/open-webui
+
