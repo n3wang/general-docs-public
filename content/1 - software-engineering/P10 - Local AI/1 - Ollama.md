@@ -86,6 +86,10 @@ $HOME/go/bin/mcphost --system-prompt "You are a helpful assistant that responds 
 
 
 
+```
+mcphost --system-prompt ./my-system-prompt.json
+```
+
 ```json
 {
   "mcpServers": {
@@ -135,3 +139,23 @@ $HOME/go/bin/mcphost --system-prompt "You are a helpful assistant that responds 
   }
 }
 ```
+
+mcphost --system-prompt ./my-system-prompt.json
+
+
+```
+$HOME/go/bin/mcphost --config mcp.config.json
+```
+
+
+
+```
+$HOME/go/bin/mcphost -m ollama:phi3.5 --config mcp.config.json
+```
+
+
+```
+$HOME/go/bin/mcphost -m ollama:llama2 --config mcp.config.json
+```
+
+
