@@ -110,3 +110,28 @@ $HOME/go/bin/mcphost --system-prompt "You are a helpful assistant that responds 
   }
 }
 ```
+
+```json
+{
+  "mcpServers": {
+    "sqlite": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--db-path",
+        "/tmp/foo.db"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/tmp"
+      ],
+      "allowedTools": ["read_file", "write_file"],
+      "excludedTools": ["delete_file"]
+    }
+  }
+}
+```
