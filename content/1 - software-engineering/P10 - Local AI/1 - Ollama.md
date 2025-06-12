@@ -171,3 +171,14 @@ http://github.com/open-webui/open-webui
 
 
 - well since, this can be 
+
+```
+$HOME/go/bin/mcphost -m ollama:qwen2.5 --config mcp.config.json
+```
+
+
+
+## Simple Click and Build 
+
+
+
