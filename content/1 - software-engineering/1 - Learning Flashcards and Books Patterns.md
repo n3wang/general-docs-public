@@ -52,6 +52,17 @@ Where to focus on these topics? Is variety over everything? How about the specif
 
 #### Being able to pick a out folder
 
+Settings
+
+```
+  "external_term_modules": [
+
+    "E:\\Documents\\obsidian\\general-docs-public\\4 - academia-project\\K1 - cfa"
+
+  ],
+```
+
+- [  ] Be able to list that 
 
 
 #### Flashing the last n count of cards.
