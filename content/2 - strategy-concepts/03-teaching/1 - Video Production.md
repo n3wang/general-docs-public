@@ -6,7 +6,18 @@
 - Create a start up of and video that inspires to continue watching the rest.
 - 
 
+
 ### Video Ideals
+
+
+#### Jeff Suzuki Videos
+
+
+[producing animations](https://www.youtube.com/watch?v=8Olpe_Uoqlo&ab_channel=JeffSuzuki%3ATheRandomProfessor)
+How to make animations video
+1. Start with the final picture
+2. Succedingly deleting animation.
+
 
 #### Making Fireship Videos
 
@@ -32,6 +43,12 @@
 - first 30 seconds is  what makes people watn to watch till the end.
 - graphics 1-5 seconds
 - for code: Delete one by one, record doing `Ctrl Z`
+- Frame hold when you are talking about something
+- 
+
+1-  Sleep on it
+Change the thumbnail in Figma
+![[Pasted image 20250615192759.png]]
 
 #### 3 blue 1 brown
 Here is a toools in pydantic where you can based on animations 
