@@ -13,9 +13,17 @@ What are the habits that makeup a distinguished engineer?
 
 So the brute stats would be:
 
-- Count of Own Useful Libraries Published
-- Count of Flashcards Books Modules and mastered > 2
-- 
+- Tech Expertise
+	- Count of Own Useful Libraries Published
+	- Count of Papers published
+- Tech Mastery
+	- Count of Flashcards Books Modules and mastered > 2
+	- Yotube Videos uploaded
+- Business
+	- Count of Money Making Projects
+- Impact
+	- Count of Engineers impacted by you
+	- Researchers, engineerins, apprentices, close friends, youtube subscribers 
 
 
 - [[1 - Learning Flashcards and Books Patterns]] - For 
