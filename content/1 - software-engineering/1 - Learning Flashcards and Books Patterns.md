@@ -46,3 +46,6 @@ Where to focus on these topics? Is variety over everything? How about the specif
 13. 13 - Business
 14. 14 - Papers to Commit To Memory
 
+
+
+## Adapting MCLI to fit the current needs 
