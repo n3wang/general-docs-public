@@ -2,11 +2,31 @@
 All the places worth building a book are likely where they are nominated with ks. but will; be tagged with: #bookcraft-material
 
 
-### Rewriting
+
+### Road of the Foundational Engineering Disciplines
+
+What are the habits that makeup a distinguished engineer?
+- Ability to quickly develop bug-free error with a place for extendability
+- Getting respected, Inspire by action and sheer discipline and academic and libraries development as well as application building and enterprise directing achievements
+- 
 
 
-![[Pasted image 20250415231603.png]]
-> 
+So the brute stats would be:
+
+- Tech Expertise
+	- Count of Own Useful Libraries Published
+	- Count of Papers published
+- Tech Mastery
+	- Count of Flashcards Books Modules and mastered > 2
+	- Yotube Videos uploaded
+- Business
+	- Count of Money Making Projects
+- Impact
+	- Count of Engineers impacted by you
+	- Researchers, engineerins, apprentices, close friends, youtube subscribers 
+
+
+- [[1 - Learning Flashcards and Books Patterns]] - For 
 
 
 
