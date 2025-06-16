@@ -31,7 +31,7 @@ Where to focus on these topics? Is variety over everything? How about the specif
 
 (Sorted by Priority of Flashcards)
 
-1. Math (Calculus, Linear Algebra, Discrete Math ) + Probability 
+1. Math (Calculus, Linear Algebra, Discrete Math ) + Probability => NOTED:  [[c0 - index]]
 2. 2 - Deep learning theory + AI Theory - Data Engineering
 3. 3 - Databases Design, SQL Queries + SQL Cookbooks
 4. 4 - Cloud + Linux + Powershell + Docker/containers
