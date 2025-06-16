@@ -2,11 +2,20 @@
 All the places worth building a book are likely where they are nominated with ks. but will; be tagged with: #bookcraft-material
 
 
-### Rewriting
+
+### Road of the Foundational Engineering Disciplines
+
+What are the habits that makeup a distinguished engineer?
+- Ability to quickly develop bug-free error with a place for extendability
+- Getting respected, 
 
 
-![[Pasted image 20250415231603.png]]
-> 
+So the brute stats would be:
+
+- 
+
+
+- [[1 - Learning Flashcards and Books Patterns]] - For 
 
 
 
