@@ -32,15 +32,16 @@ Where to focus on these topics? Is variety over everything? How about the specif
 (Sorted by Priority)
 
 1. Math (Calculus, Linear Algebra, Discrete Math ) + Probability 
-2. Deep learning theory + AI Theory
-3. SQL Queries + SQL Cookbooks
+2. 2 - Deep learning theory + AI Theory - Data Engineering
+3. 3 - Databases Design, SQL Queries + SQL Cookbooks
 4. Cloud + Linux + Powershell + Docker/containers
 5. React / Nextjs
 6. Game Development with Unity
-7. Software Architecture, Best Practices
-8. Physics
-9. Chemistry
-10. (Advanced Languages) Java + PHP + Java + Javascript + C++ + C# 
-11. Cyber Security
-12. Survival Crafts
+7. 7 - Computer Science Software Architecture, Best Practices, Site Reliability
+8. 8 - Physics  Chemistry
+9. 9 - Cfa - Finance
+10. 10 -(Advanced Languages) Java + PHP + Java + Javascript + C++ + C# 
+11. 11 - Cyber Security
+12. 12 - Survival Crafts
+13. 13 - Business
 
