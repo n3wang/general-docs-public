@@ -50,7 +50,10 @@ Where to focus on these topics? Is variety over everything? How about the specif
 
 ## Adapting MCLI to fit the current needs 
 
-#### Being able to 
+#### Being able to pick a out folder
+
+
+
 #### Flashing the last n count of cards.
 
 Flashing the last produced, Given that this is a requirement for testing what I just learned, it would make sense to have an option to just review the last 3 cards added to a certain deck quickly so that it can be spun up like 
