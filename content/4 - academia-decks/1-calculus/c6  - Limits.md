@@ -1,12 +1,15 @@
 | Chapter 6 | LIMITS | 35  |
 | :-------- | :----- | :-- |
+#### 6.1 Definition on Limits
 
 Define Km f(x) = L.
 ?x
 Intuitively, this means that, as $x$ gets closer and closer to $a, f(x)$ gets closer and closer to $L$. We can state this in more precise language as follows: For any $\varepsilon>0$, there exists $\delta>0$ such that, if $|x-a|<\delta$, then $|f(x)-L|<\varepsilon$. Here, we assume that, for any $\delta>0$, there exists at least one $x$ in the domain of $f(x)$ such that $|x-a|<\delta$.
 
 
+#### 6.2 Limits of a function
 6.2 Find $\lim _{u \rightarrow 5} \frac{u^2-25}{u-5}$.
+
 ?x
 I. The numerator and denominator both approach 0 . However, $u^2-25=(u+5)(u-5)$. Hence, $\frac{u^2-25}{u-5}=u+5$. Thus, $\lim _{u \rightarrow 5} \frac{u^2-25}{u-5}=\lim _{u \rightarrow 5}(u+5)=10$.
 
