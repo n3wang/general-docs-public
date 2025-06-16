@@ -62,7 +62,8 @@ Settings
   ],
 ```
 
-- [  ] Be able to list that 
+- [ ]  Be able to list that the list of items in the finance
+- [ ] 
 
 
 #### Flashing the last n count of cards.
