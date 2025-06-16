@@ -1,7 +1,7 @@
 
-
+#### 9.1 Composite Functions
 9.1 If $f(x)=x^2+2 x-5$ and $g(x)=x^3$, find formulas for the composite functions $f \circ g$ and $g \circ f$.
-
+?x
 $$
 \begin{aligned}
 & (f \circ g)(x)=f(g(x))=f\left(x^3\right)=\left(x^3\right)^2+2\left(x^3\right)-5=x^6+2 x^3-5 \\
@@ -9,9 +9,13 @@ $$
 \end{aligned}
 $$
 
-9.2 Write the function $\sqrt{3 x-5}$ as the composition of two functions.
 
+#### 9.2 Break into Composite Functions
+9.2 Write the function $\sqrt{3 x-5}$ as the composition of two functions.
+?x
 I Let $g(x)=3 x-5$ and let $f(x)=\sqrt{x}$. Then $(f \circ g)(x)=f(g(x))=f(3 x-5)=\sqrt{3 x-5}$.
+
+#### 9.3 
 9.3 If $f(x)=2 x$ and $g(x)=1 /(x-1)$, find all solutions of the equation $(f \circ g)(x)=(g \circ f)(x)$.
 l $(f \circ g)(x)=f(g(x))=f\left(\frac{1}{x-1}\right)=\frac{2}{x-1} \quad$ and $\quad(g \circ f)(x)=g(f(x))=g(2 x)=\frac{1}{2 x-1}$
 So, we must solve $\frac{2}{x-1}=\frac{1}{2 x-1}, \quad 4 x-2=x-1, \quad 3 x=1, \quad x=\frac{1}{3}$. Answer
