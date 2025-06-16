@@ -14,7 +14,7 @@ What are the habits that makeup a distinguished engineer?
 So the brute stats would be:
 
 - Count of Own Useful Libraries Published
-- Count of Flashcards Books Modules
+- Count of Flashcards Books Modules and mastered > 2
 - 
 
 
