@@ -29,13 +29,13 @@ What is being desired or what does an actual team lead wants to have on it's tea
 
 Where to focus on these topics? Is variety over everything? How about the specific focus on a topic to learn?
 
-(Sorted by Priority)
+(Sorted by Priority of Flashcards)
 
 1. Math (Calculus, Linear Algebra, Discrete Math ) + Probability 
 2. 2 - Deep learning theory + AI Theory - Data Engineering
 3. 3 - Databases Design, SQL Queries + SQL Cookbooks
-4. Cloud + Linux + Powershell + Docker/containers
-5. React / Nextjs
+4. 4 - Cloud + Linux + Powershell + Docker/containers
+5. 5- Frontend Architecture => React / Nextjs
 6. Game Development with Unity
 7. 7 - Computer Science Software Architecture, Best Practices, Site Reliability
 8. 8 - Physics  Chemistry
@@ -44,4 +44,5 @@ Where to focus on these topics? Is variety over everything? How about the specif
 11. 11 - Cyber Security
 12. 12 - Survival Crafts
 13. 13 - Business
+14. 14 - Papers to Commit To Memory
 
