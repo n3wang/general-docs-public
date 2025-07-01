@@ -105,20 +105,66 @@ where $H_0$ is the null hypothesis and $H_1$ is the alternative hypothesis, and 
 
 #### Z-Test
 Generally the Z-test is used when the sample size is large (to invoke the CLT) or when the population variance is known, and a $t$-test is used when the sample size is small and when the population variance is unknown. The $Z$-test for a population mean is formulated as:
+:p Provide the Z test population formula
+You're comparing your **sample mean** to a known **population mean**, and you **know how spread out the population is (σ)**.
+“How many standard errors away is my sample mean from what I expected?”
+- You **know** the population standard deviation σ\sigmaσ
+- Your **sample size is large** (usually n≥30n \geq 30n≥30)
+?x
 $$
 z=\frac{\bar{x}-\mu_0}{\sigma / \sqrt{n}} \sim N(0,1)
 $$
 in the case where the population variance $\sigma^2$ is known.
+$z=\frac{\text { sample mean }- \text { expected mean }}{\text { standard deviation } / \sqrt{n}}$
+
 
 #### $t$-Test
 The $t$-test is structured similarly to the $Z$-test, but uses the sample variance $s^2$ in place of population variance. The $t$-test is parametrized by the degrees of freedom, which refers to the number of independent observations in a dataset, denoted below by $n-1$ :
 :p Provide the T test formula given ean, the sample 
+“Given that I’m estimating the standard deviation, is my sample mean far enough from the expected mean?”
+- You **do NOT know σ**
+- Sample size is **small**
+- You assume the underlying data is **roughly normal**
 ?x
 $$
 t=\frac{\bar{x}-\mu_0}{s / \sqrt{n}} \sim t_n
+$$
+$$
+t=\frac{\text { sample mean }- \text { expected mean }}{\text { sample standard deviation } / \sqrt{n}}
 $$
 
 
 where $s^y-\frac{\sum^n(x, \bar{x})^2}{n \cdot 1}$
 
 
+
+#### Chi-Squared Test
+The Chi-squared test statistic is used to assess goodness of fit, and is calculated as follows:
+:p Provide Chi Squared Test Formula
+“Are the differences between what I saw and what I expected **too big to be random**?”
+- Data is **counts** or **frequencies**
+- You want to test **how well the data fits** an expected pattern (or independence)
+?x
+$$
+\chi^2=\sum_i \frac{\left(O_i-E_i\right)^2}{E_i}
+$$
+$$
+\chi^2=\sum \frac{(\text { observed }- \text { expected })^2}{\text { expected }}
+$$
+
+
+
+where $O_i$ is the observed value of interest and $E_i$ is its expected value. A Chi-squared test statistic takes on a particular number of degrees of freedom, which is based on the number of categories in the distribution.
+
+To use the squared test to check whether two categorical variables are independent, create a table of counts (called a contingency table), with the values of one variable forming the rows of the table and the values of the other variable forming its columns, and check for intersections. It uses the same style of Chi-squared test statistic as given above.
+
+Hypothesis Testing for Population Proportions
+Note that, due to the CLT, the Z-test can be applied to random variables of any distribution. For example, when estimating the sample proportion of a population having a characteristic of interest, we can view the members of the population as Bernoulli random variables, with those having the characteristic represented by " 1 s " and those lacking it represented by " 0 s ". Viewing the sample proportion of interest as the sum of these Bernoulli random variables divided by the total population size, we can then compute the sample mean and variance of the overall proportion, about which we can form the following set of hypotheses:
+
+$$
+H_0: \hat{p}=p_0 \text { versus } H_1: \hat{p} \neq p_0
+$$
+
+and the corresponding test statistic to conduct a $Z$-test would be: $z=\frac{\hat{p}-p_0}{\sqrt{p_0\left(1-p_0\right)} / n}$
+In practice, these test statistics form the core of A/B testing. For instance, consider the previously discussed case, in which we seek to measure conversion rates within groups $A$ and $B$, where $A$ is the control group and B has the special treatment (in this case, a marketing campaign). Adopting the same null hypothesis as before, we can proceed to use a Z-test to assess the difference in empirical population means (in this case, conversion rates) and test its statistical significance at a predetermined level.
+When asked about A/B testing or related topics, you should always cite the relevant test statistic and the cause of its validity (usually the CLT).
