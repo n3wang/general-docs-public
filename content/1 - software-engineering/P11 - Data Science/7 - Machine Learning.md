@@ -79,8 +79,44 @@ Recall the basics: we first train models on a training dataset and then test the
 Stop, read abve, and explain
 
 ### Cross Validation
+assesses the performance of an algorithm in several subsamples of training data. It consists of running the algorithm on subsamples of the training data, such as the original data without some of the original observations, and evaluating model performance on the portion of the data that was excluded from the subsample. This process is repeated many times for the different subsamples, and the results are combined at the end.
+Cross-validation helps you avoid training and testing on the same subsets of data points, which would lead to overfitting. 
+:p What is cross validation  and how does this process work, Provide an example of a popular way to do cross-validation? 
+??x
+One popular way to do cross-validation is called $k$-fold cross-validation. The process is as follows:
+1. Randomly shuffle data into equally-sized blocks (folds).
+2. For each fold $k$, train the model on all the data except for fold $i$, and evaluate the validation error using block $i$.
+3. Average the $k$ validation errors from step 2 to get an estimate of the true error.
 
-:p What is cross validation?
+| Dataset $\wedge$ |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Estimation 1 | Test 1 | Train | Train | Train | Train |
+| Estimation 2 | Train | Test 2 | Train | Train | Train |
+| Estimation 3 | Train | Train | Test 3 | Train | Train |
+| Estimation 4 | Train | Train | Train | Test 4 | Train |
+| Estimation 5 | Train | Train | Train | Train | Test 5 |
+
+Example of 5-Fold Cross Validation
+Another form of cross-validation you're expected to know for the interview is leave-one-out crossvalidation. L.OOCV is a special case of $k$-fold cross-validation where $k$ is equal to the size of the dataset (n). That is, it is where the model is testing on every single data point during the crossvalidation.
+
+x??
+
+
+how to apply cross-validation for time series data?
+?x
+Standard k-fold CV can’t be applied, since the time-series data is not randomly distributed but instead is already in chronological order. Therefore, you should not be using data “in the future” for predicting data “from the past.” Instead, you should use historical data up until a given point in time, and vary that point in time from the beginning till the end
+
+### Bootstrapping and Bagging 
+The process of bootstrapping is simply drawing observations from a large data sample repeatedly (sampling with replacement) and estimating some quantity of a population by averaging estimates from multiple smaller samples. Besides being useful in cases where the dataset is small, bootstrapping is also useful for helping deal with **class imbalance**: for the classes that are rare, we can generate new samples via bootstrapping. Another common application of bootstrapping is in **ensemble learning**: the process of averaging estimates from many smaller models into a main model. Each individual model is produced using a particular sample from the process. This process of bootstrap aggregation is also known as **bagging**. 
+p: What is bootstrapping useful for? What applications?
+?x
+Stop, read and answer
+
+### Hyperparameter Tuning 
+Hyperparameters are important because they impact a model’s training time, compute resources needed (and hence cost), and, ultimately, performance. One popular method for tuning hyperparameters is grid search, which involves forminga grid that is the Cartesian product of those parameters and then sequentially trying all such combinations and seeing which yields the best results. While comprehensive, this method can take a long time to run since the cost increases exponentially with the number of hyperparameters. Another popular hyperparameter tuning method is random search, where we define a distribution for each parameter and randomly sample from the joint distribution over all parameters. This solves the problem of exploring an exponentially increasing search space, but is not necessarily guaranteed to achieve an optimal result. While not generally asked about in data science interviews for research scientist or machine learning engineering roles, hyperparameter tuning techniques such as the methods mentioned earlier, along with Bayesian hyperparameter optimization, might be brought up. This discussion mostly happens in the context of neural networks, random forests, or XGBoost. For interviews, you should be able to list a couple of the hyperparameters for your favorite modeling technique, along with what impacts they have on generalization.
+
+
+
 
 
 
