@@ -313,19 +313,13 @@ $$
 6.22. Morgan Stanley: What is the expected value of the max of two dice rolls?
 ??x
 Since we only have two dice, let the maximum value between the two be $m$. Let
-
 $$
 X_1, X_2, Y=\max \left(X_1, X_2\right)
 $$
-
 denote the first roll, second roll, and the max of the two. Then we want to find the following:
-
 $$
 E[Y]=\sum_{i=1}^6 i * P(Y=1)
-$$
-
-
-We can condition $Y=m$ on three cases: (1) die one is the max roll; (2) die two is the max roll; or (3) they are both the same.
+$$We can condition $Y=m$ on three cases: (1) die one is the max roll; (2) die two is the max roll; or (3) they are both the same.
 For cases (1) and (2) we have: $P\left(X_1=i, X_2<i\right)=P\left(X_2=i, X_1<i\right)=\frac{1}{6} * \frac{i-1}{6}$ "For case (3), where both dice are the maximum:"
 
 $$
@@ -354,12 +348,39 @@ x??
 ---
 
 6.23. Lyft: Derive the mean and variance of the uniform distribution $\mathrm{U}(a, b)$.
+?x
+For $X \sim \mathrm{U}(\mathrm{a}, \mathrm{b})$, we have the following: $f_X(x)=\frac{1}{b-a}$
+Therefore, we can calculate the mean as:
+$$
+E[X]=\int_a^b x f_x(x) d x=\int_a^b \frac{x}{b-a} d x=\left.\frac{x^2}{2(a-b)}\right|_a ^b=\frac{a+b}{2}
+$$
+Similarly, the variance can be as expressed as follows: $\operatorname{Var}(X)=E\left[X^2\right]-E[X]^2$
+Giving us:
+$$
+E\left[X^2\right]=\int_a^b x^2 f_X(x) d x=\int_a^b \frac{x^2}{b-a} d x=\left.\frac{x^3}{3(a-b)}\right|_a ^b=\frac{a^2+a b+b^2}{3}
+$$Therefore: $\operatorname{Var}(X)=\frac{a^2+a b^2+b^2}{3}-\left(\frac{a+b}{2}\right)^2=\frac{(b-a)^2}{12}$
 
 ---
 
 6.24. Citadel: How many cards would you expect to draw from a standard deck before seeing the first ace?
-6.25. Spotify: Say you draw n samples from a uniform distribution $\mathrm{U}(a, b)$. What are the MLE estimates of $a$ and $b$ ?
+?x
+Although one can enumerate all the probabilities, this can get a bit messy from an algebraic standpoint, so obtaining the following intuitive answer is more preferable. Imagine we have aces A1, A2, A3, A4. We can then draw a line in between them to represent an arbitrary number (including 0 ) of cards between each ace, with a line before the first ace and after the last.
+$$
+|\mathrm{A} 1| \mathrm{A} 2|\mathrm{~A} 3| \mathrm{A} 4 \mid
+$$There are $52-4=48$ non-ace cards in a deck. Each of these cards is equally likely to be in any of the five lines. Therefore, there should be $48 / 5=9.6$ cards drawn prior to the first ace being drawn. Hence, the expected number of cards drawn until the first ace is seen is $9.6+1=10.6$ cards we can't forget to add 1 , because we need to include drawing the ace card itself.
 
+---
+
+6.25. Spotify: Say you draw n samples from a uniform distribution $\mathrm{U}(a, b)$. What are the MLE estimates of $a$ and $b$ ?
+?x
+Note that for a uniform distribution, the probability density is $\frac{1}{b-a}$ for any value on the interval $[a$, $b$ ]. The likelihood function is therefore as follows:
+$$
+f\left(x_1, \ldots, x_n \mid a, b\right)=\left(\frac{1}{b-a}\right)^n
+$$
+To obtain the MLE, we maximize this likelihood function, which is clearly maximized if $b$ is the largest of the samples and $a$ is the smallest of the samples. Therefore, we have the following:
+$$
+\hat{a}=\min \left(x_1, \ldots, x_n\right),=\hat{b} \max \left(x_1, \ldots, x_n\right)
+$$
 
 ### Hard
 Hard questiosnare to be continued
