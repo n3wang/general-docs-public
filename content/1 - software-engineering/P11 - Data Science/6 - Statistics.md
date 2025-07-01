@@ -1,8 +1,8 @@
-[Nick Singh, Kevin Huo - Ace the Data Science Interview_ 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street-Ace the Data Science Interview (2021).pdf](file:///C:/Users/Nelson%20Wang/Koofr/Books/Technical/2%20-%20Data%20Engineering/Nick%20Singh,%20Kevin%20Huo%20-%20Ace%20the%20Data%20Science%20Interview_%20201%20Real%20Interview%20Questions%20Asked%20By%20FAANG,%20Tech%20Startups,%20&%20Wall%20Street-Ace%20the%20Data%20Science%20Interview%20\(2021\).pdf)
+
 
 ## Theory
 
-### Properties of Random Variable
+#### Properties of Random Variable
 
 For any given random variable X, the following properties hold true (below we assume X is continuous, but it also holds true for discrete random variables). The expectation (average value, or mean) of a random variable is given by the integral of the value
 
@@ -77,7 +77,7 @@ $$
 Although it is not necessary to memorize the derivations for all the different probability distributions, you should be comfortable deriving them as needed, as it is a common request in more technical interviews. To this end, you should make sure to understand the formulas given above and be able to apply them to some of the common probability distributions like the exponential or uniform distribution.
 
 
-### Law of Large Numbers
+#### Law of Large Numbers
 The Law of Large Numbers (LLN) states that if you sample a random variable independently a large number of times, the measured average value should converge to the random variable's true expectation. Stated more formally,
 
 $$
@@ -179,7 +179,8 @@ $$
 $$
 .
 In the prior example with the $\mathrm{A} / \mathrm{B}$ testing on conversion rates, we see that the confidence interval for a population proportion would be
-.$$
+-
+$$
 \hat{p} \pm z_{\mathrm{a} / 2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 .
@@ -199,3 +200,50 @@ As long as the sampling distribution of a random variable is known, the appropri
 > “If I repeated this many times, 95 out of 100 intervals would catch the real answer.”
 
 
+#### Type I and II Errors
+There are two errors that are frequently assessed: type I error, which is also known as a "false positive." and type II error, which is also known as a "false negative." Specifically, a type I error is when one rejects the null hypothesis when it is correct, and a type II error is when the null hypothesis is not rejected when it is incorrect.
+![[Pasted image 20250701154755.png]]
+:p What is a type I and type II in a example situation?
+?x
+Usually $1-\alpha$ is referred to as the confidence level, whereas $1-\beta$ is referred to as the power. If you plot sample size versus power, generally you should see a larger sample size corresponding to a larger power. It can be useful to look at power in order to gauge the sample size needed for detecting a significant effect. Generally, tests are set up in such a way as to have both $1-\alpha$ and $1-\beta$ relatively high (say at 0.95 and 0.8 , respectively).
+In testing multiple hypotheses, it is possible that if you ran many experiments --- even if a particular outcome for one experiment is very unlikely - you would see a statistically significant outcome at least once. So, for example, if you set $\alpha=0.05$ and run 100 hypothesis tests, then by pure chance you would expect 5 of the tests to be statistically significant. However, a more desirable outcome is to have the overall $\alpha$ of the 100 tests be 0.05 , and this can be done by setting the new $\alpha$ to $\alpha / n$, where $n$ is the number of hypothesis tests (in this case, $\alpha / n=0.05 / 100=0.0005$ ). This is known as Bonferroni correction, and using it helps make sure that the overall rate of false positives is controlled within a multiple testing framework.
+
+#### MLE and MAP
+Any probability distribution has parameters, so fitting parameters is an extremely crucial part of data analysis. There are two general methods for doing so. In maximum likelihood estimation (MLE), the goal is to estimate the most likely parameters given a likelihood function: $\theta_{M L E}=\arg \max L(\theta)$, where $L(\theta)=f_n\left(x_1 \ldots x_n \mid \theta\right)$.
+Since the values of $X$ are assumed to be i.i.d., then the likelihood function becomes the following:
+-
+$$
+L(\theta)=\prod_{i+1}^n f\left(x_i \mid \theta\right)
+$$
+
+> Multiply the probability of each data point, assuming the parameter is $θ$. The higher the product, the more likely it is that θ is the correct setting.
+
+
+The natural $\log$ of $L(\theta)$ is then taken prior to calculating the maximum; since log is a monotonically increasing function, maximizing the $\log$-likelihood $\log L(\theta)$ is equivalent to maximizing the likelihood:
+$$
+\log L(\theta)=\sum_{i=1}^n \log f\left(x_i \mid \theta\right)
+$$
+
+> - **Products** are hard to work with, **sums** are easier.The **log doesn’t change the maximum**, because it’s a **monotonic function** (order stays the same). This version is called the **log-likelihood**, and it simplifies the math.
+
+Another way of fitting parameters is through maximum a posteriori estimation (MAP), which assumes a "prior distribution:"
+$$
+\theta_{M U P}=\arg \max g(\theta) f\left(x_1 \ldots x_n \mid \theta\right)
+$$
+
+> MAP estimation finds the value of θ that is most **probable given the data**, not just most likely to produce the data.
+
+where the similar log-likelihood is again employed, and $g(\theta)$ is a density function of $\theta$.
+Both MLE and MAP are especially relevant in statistics and machine learning, and knowing these is recommended, especially for more technical interviews. For instance, a common question in such interviews is to derive the MLE for a particular probability distribution. Thus, understanding the above steps, along with the details of the relevant probability distributions, is crucial.
+
+:p Explain Maximum Likelihood Estimation and Maxium A Posteriri estimation ideas and formulas in non technical way
+
+??x
+**MLE**
+You’ve collected some data — like seeing the results of 100 coin flips — and now you're asking:
+“What’s the most likely setting (parameter) that explains what I saw?”
+MLE says: “Pick the parameter that makes the data you observed the most likely.”
+**MAP**
+“Pick the parameter that is most likely given both the data and what you believed before.”
+“Choose the recipe that both explains the flavor **and** matches what you already thought the baker probably used.”
+x??
