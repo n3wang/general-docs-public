@@ -616,3 +616,37 @@ iframe.pdf {
   transition: width 0.2s ease;
   z-index: 9999;
 }
+
+
+  /* Header styling and automatic numbering. --------------------------------------------- */
+  article > h1, h2, h3, h4, h5, h6 {
+    font-family: MJXZERO, MJXTEX !important;
+    counter-reset: H2live !important;
+  }
+
+
+  /* Tables. ----------------------------------------------------------------------------- */
+  table, pre {
+      page-break-inside: avoid !important;
+  }
+  table {
+      font-family: Times !important;
+      font-size: 10pt !important;
+      text-align: center !important;
+      margin: 10px auto 5px !important;
+      border-top: 1px solid #292929 !important;
+      border-bottom: 1px solid #292929 !important;
+  }
+  th { /* Table headers. */
+      color: black !important;
+      font-weight: normal !important;
+      border: none !important;
+      border-bottom: 1px solid darkgray !important;
+      padding: 2px 5px !important;
+  }
+  td {
+      border: none !important;
+      padding: 2px 5px !important;
+  }
+
+

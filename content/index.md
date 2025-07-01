@@ -1,6 +1,24 @@
 ---
-title: Welcome to Quartz
+title: N3wang Docs
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+
+#### Quick commands:
+
+
+| commands    | Description |
+| ----------- | ----------- |
+| `Ctrlk + K` | Search      |
+
+
+
+## Any other Commands
+
+### Title 3
+
+something to say
+
+
+### Title 4
+
+something to say

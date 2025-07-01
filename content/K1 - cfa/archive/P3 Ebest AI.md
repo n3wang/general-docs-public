@@ -1,0 +1,1 @@
+- Allow to set up theoir configuration
