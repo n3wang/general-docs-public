@@ -146,18 +146,217 @@ $$and after solving we get: $E[X]=6$. Therefore, we would expect 6 flips.
 
 6.13. Citadel: What is the expected number of rolls needed to see all six sides of a fair die?
 ?x
+Let k denote the number of distinct sides seen from rolls. The first roll will always result in a new side being seen. If you have seen k sides. where& < 6, then the probability of rolling an unseen value will be (6 — &)/6, since there are 6 — k values you have not seen, and 6 possible outcomes of each roll.
+Note that each roll is independent of previous rolls. Therefore, for the second roll $(k=1)$, the time until a side not seen appears has a geometric distribution with $p=5 / 6$, since there are five of the six sides left to be seen. Likewise, after two sides $(k=2)$, the time taken is a geometric distribution, with $p=4 / 6$. This continues until all sides have been seen.
+Recall that the mean for a geometric distribution is given by $1 / p$, and let $X$ be the number of rolls needed to show all six sides. Then, we have the following:
+$$
+E[X]=1+\frac{6}{5}+\frac{6}{4}+\frac{6}{3}+\frac{6}{2}+\frac{6}{1}=6 \sum_{p=1}^6 \frac{1}{p}=14.7 \text { rolls }
+$$
 
+
+---
 
 6.14. Akuna Capital: Say you're rolling a fair six-sided die. What is the expected number of rolls until you roll two consecutive 5 s ?
+?x
+
+Solution \#6.14
+Similar in methodology to question 13, let $X$ be the number of rolls until two consecutive fives. Let $Y$ denote the event that a five was just rolled.
+Conditioning on $Y$, we know that either we just rolled a five, so we only have one more five to roll, or we rolled some other number and now need to start over after having rolled once:
+
+$$
+E[X]=\frac{1}{6}(1+E[X \mid Y])+\frac{5}{6}(1+E[X])
+$$
+
+
+Note that we have the following: $E[X \mid Y]=\frac{1}{6}(1)+\frac{5}{6}(1+E[X])$
+Plugging the results in yields an expected value of 42 rolls: $E[X]=42$
+
+---
+
 6.15. D.E. Shaw: A coin was flipped 1,000 times, and 550 times it showed heads. Do you think the coin is biased? Why or why not?
+?x
+Solution \#6.15
+Because the sample size of flips is large ( 1,000 ), we can apply the Central Limit Theorem. Since each individual flip is a Bernoulli random variable, we can assume that $p$ is the probability of getting heads. We want to test whether p is .5 (i.e., whether it is a fair coin or not). The Central Limit Theorem allows us to approximate the total number of heads seen as being normally distributed.
+More specifically, the number of heads seen out of $n$ total rolls follows a binomial distribution since it a sum of Bernoulli random variables. If the coin is not biased $(p=.5)$, then the expected number of heads is as follows: $\mu=n p=1000 \star 0.5=500$, and the variance of the number of heads is given by:
+$$
+\sigma^2=n p(1-p)=1000 * 0.5 * 0.5=250, \sigma=\sqrt{250} \approx 16
+$$Since this mean and standard deviation specify the normal distribution, we can calculate the corresponding $z$-score for 550 heads as follows:
+$$
+z=\frac{550-500}{16}=3.16
+$$This means that, if the coin were fair, the event of seeing 550 heads should occur with a $<0.1 \%$ chance under normality assumptions. Therefore, the coin is likely biased.
+
+
+
+---
+
 6.16. Quora: You are drawing from a normally distributed random variable $X \sim \mathrm{~N}(0,1)$ once a day. What is the approximate expected number of days until you get a value greater than 2 ?
+?x
+Solution \#6.16
+Since $X$ is normally distributed. we can employ the cumulative distribution function (CDF) of the normal distribution: $\Phi(2)=P(X \leq 2)=P(X \leq \mu+2 \sigma)=0.9772$
+Therefore, $P(X>2)=1-0.977=0.023$ for any given day. Since each day's draws are independent. the expected time until drawing an $X>2$ follows a geometric distribution, with $p=0.023$. Letting $T$ be a random variable denoting the number of days, we have the following:
+$$
+E[T]=\frac{1}{p}=\frac{1}{.02272} \approx 44 \text { days }
+$$
+---
+
 6.17. Akuna Capital: Say you have two random variables $X$ and $Y$, each with a standard deviation. What is the variance of $a X+b Y$ for constants $a$ and $b$ ?
+?x
+Let the variances for $X$ and $Y$ be denoted by $\operatorname{Var}(X)$ and $\operatorname{Var}(Y)$.
+Then, recalling that the variance of a sum of variables is expressed as follows:
+$$
+\operatorname{Var}(X+Y)=\operatorname{Var}(X)+\operatorname{Var}(Y)+2 \operatorname{Cov}(X, Y)
+$$
+and that a constant coefficient of a random variable is assessed as follows: $\operatorname{Var}(a X)=a^2 \operatorname{Var}(X)$ We have $\operatorname{Var}(a X+b Y)=a^2 \operatorname{Var}(X)+b^2 \operatorname{Var}(Y)+2 a b \operatorname{Cov}(X, Y)$, which would provide the bounds on the designated variance; the range will depend on the covariance between $X$ and $Y$.
+
+---
+
 6.18. Google: Say we have $X \sim \operatorname{Uniform}(0,1)$ and $Y \sim \operatorname{Uniform}(0,1)$ and the two are independent. What is the expected value of the minimum of $X$ and $Y$ ?
+?x
+Solution \#6.18
+Let $Z=\min (X, Y)$. Then we know the following: $P(Z \leq z)=P(\min (X, Y) \leq z)=1-P(X>z, Y>z)$ For a uniform distribution, the following is true for a value of $z$ between 0 and 1 :
+
+$$
+P(X>z)=1-z \text { and } P(Y>z)=1-z
+$$
+
+
+Since $X$ and $Y$ are i.i.d., this yields: $P(Z \leq z)=1-P(X>z, Y>z)=1-(1-z)^2$
+Now we have the cumulative distribution function for $z$. We can get the probability density function by taking the derivative of the CDF to obtain the following: $f z(z)=2(1-z)$. Then, solving for the expected value by taking the integral yields the following:
+
+$$
+E[Z]=\int_0^1 z f z(z) d z=2 \int_0^1 z(1-z) d z=2\left(\frac{1}{2}-\frac{1}{3}\right)=\frac{1}{3}
+$$
+
+
+Therefore, the expected value for the minimum of $X$ and $Y$ is $1 / 3$.
+
+
+---
+
 6.19. Morgan Stanley: Say you have an unfair coin which lands on heads $60 \%$ of the time. How many coin flips are needed to detect that the coin is unfair?
+?x
+Solution \#6.19
+Say we flip the unfair coin $n$ times. Each flip is a Bernoulli trial with a success probability of $p$ :
+
+$$
+x_1, x_2, \ldots x_n, x_i \sim \operatorname{Ber}(p)
+$$
+
+
+We can construct a confidence interval for $p$ as follows, using the Central Limit Theorem. First, we decide on our level of confidence. If we select a $95 \%$ confidence level, the necessary $z$-score is $z=1.96$. We then construct a $95 \%$ confidence interval for $p$. If it does not include 0.5 as its lower bound, then we can reject the null hypothesis that the coin is fair.
+Since the trials are i.i.d., we can compute the sample mean for $p$ from a large number of trials:
+
+$$
+\hat{p}=\frac{1}{n} \sum_{i=1}^n x_i
+$$
+
+
+We know the following properties hold: $E[\hat{p}]=\frac{n p}{n}=p$ and $\operatorname{Var}=(\hat{p})=\frac{n p(1-p)}{n^2}=\frac{p(1-p)}{n}$
+Therefore, our $95 \%$ confidence interval is given by the following: $p \pm z \sqrt{\frac{p(1-p)}{n}}$
+Since the true $p=0.6$, plugging that in and setting the lower bound of the interval equal to 0.5 yields:
+
+$$
+0.6-1.96 \sqrt{\frac{0.6(1-0.6)}{n}}=0.5
+$$
+
+
+Solving for $n$ yields 93 flips.
+
+---
+
 6.20. Uber: Say you have $n$ numbers $1 \ldots n$, and you uniformly sample from this distribution with replacement $n$ times. What is the expected number of distinct values you would draw?
+?x
+Solution \#6.20
+Let the following be an indicator random variable: $X_i=1$ if $i$ is drawn in $n$ turns
+We would then want to find the following: $\sum_{i=1}^n E\left[X_i\right]$
+We know that $p\left(X_i=1\right)=1-p\left(X_i=0\right)$, so the probability of a number not being drawn (where each draw is independent) is the following:
+
+$$
+p\left(X_i=0\right)=\left(\frac{n-1}{n}\right)^n
+$$
+
+
+Therefore, we have: $p\left(X_i=1\right)=1-\left(\frac{n-1}{n}\right)^n$ and by linearity of expectation, we then have:
+
+$$
+\sum_{i=1}^n E\left[x_i\right]=n E\left[X_i\right]=n\left(1-\left(\frac{n-1}{n}\right)^n\right)
+$$
+
+
+
+---
+
 6.21. Goldman Sachs: There are 100 noodles in a bowl. At each step, you randomly select two noodle ends from the bowl and tie them together. What is the expectation on the number of loops formed?
+?x
+
+Solution \#6.21
+Say that we have $n$ noodles. At any given step, we will have one of two outcomes: (1) we pick two ends from the same noodle (which makes a loop), or (2) we pick two ends from different noodles. Let $X_n$ denote a random variable representing the number of loops with $n$ noodles remaining.
+The probability of case (1) happening is: $\frac{n}{\binom{2 n}{2}}=\frac{1}{2 n-1}$
+where the denominator represents the number of ends we can choose from the noodles, and the numerator represents the number of cases where we choose the same noodle.
+
+Therefore, the probability of case (2) happening is: $1-\frac{1}{2 n-1}=\frac{2 n-2}{2 n-1}$
+Then, taking case (1) and (2), we have the following recursive formulation for the expectation of the number of loops formed:
+
+$$
+E\left[X_n\right]=\frac{1}{2 n-1}+\frac{2 n-2}{2 n-1} E\left[X_{n-1}\right]
+$$
+
+
+Plugging in $E\left[X_1\right]=1$ and calculating the first few terms, we can notice the following pattern, for which we can plug in $n=100$ to obtain the answer:
+
+$$
+E\left[X_{100}\right]=1+\frac{1}{3}+\ldots+\frac{1}{2(100)-1} \approx 3.3
+$$
+
+---
+
 6.22. Morgan Stanley: What is the expected value of the max of two dice rolls?
+??x
+Since we only have two dice, let the maximum value between the two be $m$. Let
+
+$$
+X_1, X_2, Y=\max \left(X_1, X_2\right)
+$$
+
+denote the first roll, second roll, and the max of the two. Then we want to find the following:
+
+$$
+E[Y]=\sum_{i=1}^6 i * P(Y=1)
+$$
+
+
+We can condition $Y=m$ on three cases: (1) die one is the max roll; (2) die two is the max roll; or (3) they are both the same.
+For cases (1) and (2) we have: $P\left(X_1=i, X_2<i\right)=P\left(X_2=i, X_1<i\right)=\frac{1}{6} * \frac{i-1}{6}$ "For case (3), where both dice are the maximum:"
+
+$$
+P\left(X_1=X_2=i\right)=\frac{1}{6} * \frac{1}{6}
+$$
+
+
+Putting everything together yields the following: $E[Y]=\sum_{i=1}^6 i *\left(\frac{1}{6} * \frac{i-1}{6} * 2+\frac{1}{6} * \frac{1}{6}\right)=\frac{161}{36}$ A simpler way to visualize this is to use a contingency table, such as the one below:
+
+| 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|
+| $(1,1)$ | $(1,2)$ | $(1,3)$ | $(1,4)$ | $(1,5)$ | $(1,6)$ |
+| $(2,1)$ | $(2,2)$ | $(2,3)$ | $(2,4)$ | $(2,5)$ | $(2,6)$ |
+| $(3,1)$ | $(3,2)$ | $(3,3)$ | $(3,4)$ | $(3,5)$ | $(3,6)$ |
+| $(4,1)$ | $(4,2)$ | $(4,3)$ | $(4,4)$ | $(4,5)$ | $(4,6)$ |
+| $(5,1)$ | $(5,2)$ | $(5,3)$ | $(5,4)$ | $(5,5)$ | $(5,6)$ |
+| $(6,1)$ | $(6,2)$ | $(6,3)$ | $(6,4)$ | $(6,5)$ | $(6,6)$ |
+
+Then the expectation is simply given by:
+
+$$
+E[Y]=1 \times \frac{1}{6}+2 \times \frac{3}{6}+3 \times \frac{5}{6}+4 \times \frac{7}{6}+5 \times \frac{9}{6}+6 \times \frac{11}{6}=\frac{161}{36} \approx 4.5
+$$
+x??
+
+---
+
 6.23. Lyft: Derive the mean and variance of the uniform distribution $\mathrm{U}(a, b)$.
+
+---
+
 6.24. Citadel: How many cards would you expect to draw from a standard deck before seeing the first ace?
 6.25. Spotify: Say you draw n samples from a uniform distribution $\mathrm{U}(a, b)$. What are the MLE estimates of $a$ and $b$ ?
 
