@@ -1,3 +1,8 @@
+---
+tags:
+  - CFA
+---
+
 
 ## To Research
 
@@ -118,9 +123,18 @@ Hyperparameters are important because they impact a model’s training time, com
 ?x
 Please read and continue
 
-method?
-?x
-Please read and continue
+
+### Trainning Times and Learning Curves
+
+
+
+
+
+
+
+
+
+
 
 
 
