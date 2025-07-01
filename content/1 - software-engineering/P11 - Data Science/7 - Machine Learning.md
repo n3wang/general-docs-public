@@ -113,7 +113,16 @@ p: What is bootstrapping useful for? What applications?
 Stop, read and answer
 
 ### Hyperparameter Tuning 
-Hyperparameters are important because they impact a model’s training time, compute resources needed (and hence cost), and, ultimately, performance. One popular method for tuning hyperparameters is grid search, which involves forminga grid that is the Cartesian product of those parameters and then sequentially trying all such combinations and seeing which yields the best results. While comprehensive, this method can take a long time to run since the cost increases exponentially with the number of hyperparameters. Another popular hyperparameter tuning method is random search, where we define a distribution for each parameter and randomly sample from the joint distribution over all parameters. This solves the problem of exploring an exponentially increasing search space, but is not necessarily guaranteed to achieve an optimal result. While not generally asked about in data science interviews for research scientist or machine learning engineering roles, hyperparameter tuning techniques such as the methods mentioned earlier, along with Bayesian hyperparameter optimization, might be brought up. This discussion mostly happens in the context of neural networks, random forests, or XGBoost. For interviews, you should be able to list a couple of the hyperparameters for your favorite modeling technique, along with what impacts they have on generalization.
+Hyperparameters are important because they impact a model’s training time, compute resources needed (and hence cost), and, ultimately, performance. One popular method for tuning hyperparameters is grid search, which involves forminga grid that is the Cartesian product of those parameters and then sequentially trying all such combinations and seeing which yields the best results. While comprehensive, this method can take a long time to run since the cost increases exponentially with the number of hyperparameters. Another popular hyperparameter tuning method is **random search**, where we define a distribution for each parameter and randomly sample from the joint distribution over all parameters. This solves the problem of exploring an exponentially increasing search space, but is not necessarily guaranteed to achieve an optimal result. 
+:p What is Hyperparaeters tuning important for? Provide an example of hypeparametertuning method?
+?x
+Please read and continue
+
+method?
+?x
+Please read and continue
+
+
 
 
 
