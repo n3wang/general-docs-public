@@ -61,8 +61,31 @@ Pause and read above
 
 #### Regularization
 Regularization aims to reduce the complexity of models. In relation to the bias-variance trade-off, regularization aims to decrease complexity in a way that significantly reduces variance while only slightly increasing bias. The most widely used forms of regularization are L1 and L2. Both methods add a simple penalty term to the objective function. The penalty helps shrink coefficients of features, which reduces overfitting. This is why, not surprisingly, they are also known as shrinkage methods.
-.
+:p Explain the process of regularization in simple terms, Explain the L1 and L2 form of regularization
+?x
 Specifically, L1, also known as lasso, uses the absolute value of a coefficient to the objective function as a penalty. On the other hand, L2, also known as ridge, uses the squared magnitude of a coefficient to the objective function. The L1 and L2 penalties can also be linearly combined, resulting in the popular form of regularization called elastic net. Since having models overfit is a prevalent problem in machine learning, it`s important to understand when to use each type of regularization. For example, Ll serves as a feature selection method, since many coefficients shrink to 0 (are zeroed out), and hence, are removed from the model. L2 is less likely to shrink any coefficients to 0 . Therefore, L1 regularization leads to sparser models, and is thus considered a more strict shrinkage operation.
+
+
+#### Inerpretabiliy & Explainability
+linear models have weights which can be visualized and analyzed to interpret the decision making. Similarly, random forests have feature importance readily available to identify what the model is using and learning. There are also some general frameworks that can help with more “black-box” models. One is SHAP (SHapley Additive exPlanation), which uses “Shapley” values to denote the average marginal contribution of a feature over all possible combinations of inputs. Another technique 1S LIME (Local Interpretable Model-agnostic Explanations), which uses sparse linear models built around various predictions to understand how any model performs in that local vicinity.
+:p explain ways in which you cna make your models easier to explain.
+?x
+Stop, read above, and explain
+
+## Model Trainning
+Recall the basics: we first train models on a training dataset and then test the models ona testing dataset. Normally, 80% of the data will go towards training data, and 20% serves as the test set. But as we soon cover, there’s much more to model training than the 80/20 train vs. test split.
+:p What is the basics on training datasets and testing models?
+?x
+Stop, read abve, and explain
+
+### Cross Validation
+
+:p What is cross validation?
+
+
+
+
+
 
 
 
