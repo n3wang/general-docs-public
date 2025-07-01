@@ -11,6 +11,20 @@ import {
 import { CommonArgv, BuildArgv, CreateArgv, SyncArgv } from "./cli/args.js"
 import { version } from "./cli/constants.js"
 
+
+
+  const markers = ["::", "?x", "??x", "x??"];
+  const article = document.querySelector("article");
+  const paragraphs = article.querySelectorAll("p");
+
+  paragraphs.forEach(p => {
+    const text = p.textContent;
+    if (markers.some(marker => text.includes(marker))) {
+      p.remove(); // Remove the whole <p> tag
+    }
+  });
+
+  
 yargs(hideBin(process.argv))
   .scriptName("quartz")
   .version(version)
