@@ -37,8 +37,9 @@ x??
 #### Zero Coupon Bond with a  Negative Yield
 
 Example:
-A zero-coupon bond with 15 years to maturity has a face value of $\$ 1,000$. Its yield is a $-0.5 \%$ yield with annual compounding. Calculate the price of the bond.
+A zero-coupon bond with 15 years to maturity has a face value of $\$ 1,000$. Its yield is a -0.5\% yield with annual compounding. Calculate the price of the bond.
 ?p: Calculate the price of the bond.
+
 ?x
 Using the calculator:
 FV & $=1,000$ & (future / face value) \\
