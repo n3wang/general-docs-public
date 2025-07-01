@@ -34,21 +34,25 @@ $$
 
 
 The conditional values of both the expectation and variance are as follows. For example, consider the case for the conditional expectation of $X$, given that $Y=y$ :
-:p 
-?x
+
 $$
 E[X \mid Y=y]=\int_x^x x f_{X \mid Y}(x \mid y) d x
 $$
 
 
 For any given random variables $X$ and $Y$, the covariance, a linear measure of relationship between the two variables, is defined by the following:
-
+Measures **how X and Y move together**:
+- **Positive**: both increase/decrease together
+- **Negative**: one increases while other decreases
+"Covariance = average product of their deviations from mean"
+:p provide the formula for calculating the Covariance between X and Y given Expectation of them
+?x
 $$
 \operatorname{Cov}(X, Y)=E[(X-E[X])(Y-E[Y])]=E[X Y]-E[X] E[Y]
 $$
 
 and the normalization of covariance, represented by the Greek letter $\rho$, is the correlation between $X$ and $Y$ :
-
+?x
 $$
 \rho(X, Y)=\frac{\operatorname{Cov}(X, Y)}{\sqrt{\operatorname{Var}(X) \operatorname{Var}(Y)}}
 $$
@@ -67,6 +71,38 @@ Therefore the expectation of $X$ is:
 $$
 E[X]=\int_a^b x f_X(x) d x=\int_a^b \frac{x}{b-a} d x=\left.\frac{x^2}{2(b-a)}\right|_a ^b=\frac{a+b}{2}
 $$
+Although it is not necessary to memorize the derivations for all the different probability distributions, you should be comfortable deriving them as needed, as it is a common request in more technical interviews. To this end, you should make sure to understand the formulas given above and be able to apply them to some of the common probability distributions like the exponential or uniform distribution.
+
+
+### Law of Large Numbers
+The Law of Large Numbers (LLN) states that if you sample a random variable independently a large number of times, the measured average value should converge to the random variable's true expectation. Stated more formally,
+
+$$
+\bar{X}_n=\frac{X_1+\ldots+X_n}{n} \rightarrow \mu, \text { as } n \rightarrow \infty
+$$
+
+
+This is important in studying the longer-term behavior of random variables over time. As an example, a coin might land on heads 5 times in a row, but over a much larger $n$ we would expect the proportion
+
+#### Hypothesis Testing
+**General Setup**
+The process of testing whether or not a sample of data supports a particular hypothesis is called hypothesis testing. Generally, hypotheses concern particular properties of interest for a given population, such as its parameters, like $\mu$ (for example, the mean conversion rate among a set of users).
+The steps in testing a hypothesis are as follows: 
+:p provide the 3 steps to create the hypothesis testing
+?x
+1. State a null hypothesis and an alternative hypothesis. Either the null hypothesis will be rejected (in favor of the alternative hypothesis), or it will fail to be rejected (although failing to reject the null hypothesis does not necessarily mean it is true, but rather that there is not sufficient evidence to reject it).
+2. Use a particular test statistic of the null hypothesis to calculate the corresponding $\rho$-value.
+3. Compare the p -value to a certain significance level $\alpha$.
+
+Since the null hypothesis typically represents a baseline (e.g., the marketing campaign did not increase conversion rates, etc.), the goal is to reject the null hypothesis with statistical significance and hope that there is a significant outcome.
+Hypothesis tests are either one- or two-tailed tests. A one-tailed test has the following types of null and alternative hypotheses:
+$$
+H_0: \mu=\mu_0 \text { versus } H_1: \mu<\mu_0 \text { or } H_1: \mu>\mu_0
+$$
+
+whereas a two-tailed test has these types: $H_0: \mu=\mu_0$ versus $H_1: \mu \neq \mu_0$
+where $H_0$ is the null hypothesis and $H_1$ is the alternative hypothesis, and $\mu$ is the parameter of interest.
+
 
 
 
