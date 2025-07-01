@@ -103,6 +103,22 @@ $$
 whereas a two-tailed test has these types: $H_0: \mu=\mu_0$ versus $H_1: \mu \neq \mu_0$
 where $H_0$ is the null hypothesis and $H_1$ is the alternative hypothesis, and $\mu$ is the parameter of interest.
 
+#### Z-Test
+Generally the Z-test is used when the sample size is large (to invoke the CLT) or when the population variance is known, and a $t$-test is used when the sample size is small and when the population variance is unknown. The $Z$-test for a population mean is formulated as:
+$$
+z=\frac{\bar{x}-\mu_0}{\sigma / \sqrt{n}} \sim N(0,1)
+$$
+in the case where the population variance $\sigma^2$ is known.
 
+#### $t$-Test
+The $t$-test is structured similarly to the $Z$-test, but uses the sample variance $s^2$ in place of population variance. The $t$-test is parametrized by the degrees of freedom, which refers to the number of independent observations in a dataset, denoted below by $n-1$ :
+:p Provide the T test formula given ean, the sample 
+?x
+$$
+t=\frac{\bar{x}-\mu_0}{s / \sqrt{n}} \sim t_n
+$$
+
+
+where $s^y-\frac{\sum^n(x, \bar{x})^2}{n \cdot 1}$
 
 
