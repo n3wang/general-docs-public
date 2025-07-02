@@ -21,7 +21,7 @@ The cash flow statement ultimately shows the change in cash during an accounting
 
 
 The cash flow statement is divided into three sections:
-1. **Operating Activities**:: Cash flows related to the company’s core business operations (e.g., revenue, expenses). <!--SR:!2025-02-09,4,270-->
+1. **Operating Activities**:: Cash flows related to the company’s core business operations (e.g., revenue, expenses). <!--SR:!2025-07-03,1,250-->
 2. **Investing Activities**:: Cash flows related to the purchase or sale of long-term assets (e.g., property, plant, equipment, investments).
 3. **Financing Activities**:: Cash flows related to the company’s capital structure (e.g., issuing debt, repaying loans, paying dividends).
 
