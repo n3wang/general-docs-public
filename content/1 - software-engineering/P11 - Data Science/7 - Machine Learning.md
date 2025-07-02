@@ -126,6 +126,66 @@ Please read and continue
 
 ### Trainning Times and Learning Curves
 
+## Linear Regression
+
+What is the goal of linear regressions?
+:p Explain whats the goal using the formula
+?x
+In linear regression, the goal is to estimate a function $f(x)$, such that each feature has a linear relationship to the target variable $y$, or:
+$$
+y=X \beta
+$$
+where $X$ is a matrix of predictor variables and $\beta$ is a vector of parameters that determines the weight of each variable in predicting the target variable. So, how do you compare the performance of two linear regression models?
+
+
+### Evaluating Linear Regression
+:p On what is built the concept of linear regression evaluation? What is the sum of squares formula?
+?x
+Evaluation of a regression model is built on the concept of a residual: the distance between what the model predicted versus the actual value. Linear regression estimates $\beta$ by minimizing the residual sum of squares (RSS), which is given by the following:
+$$
+R S S(\beta)=(y-X \beta)^T(y-X \beta)
+$$
+
+#### MAE and MSE? in RSS
+
+Two other sum of squares concepts to know besides the RSS are the total sum of squares (TSS) and explained sum of squares (ESS). The total sum of squares is the combined variation in the data ( $E S S+R S S$ ). The explained sum of squares is the difference between TSS and RSS. $R^2$, a popular metric for assessing goodness-of-fit, is given by $R^2=1-\frac{R S S}{T S S}$. It ranges between zero and one, and represents the proportion of variability in the data explained by the model. Other prominent error metrics to measure the goodness-of-fit of linear regression are MSE (mean squared error) and MAE (mean absolute error). MSE measures the variance of the residuals, whereas MAE measures the average of the residuals; hence, MSE penalizes larger errors more than MAE, making it more sensitive to outliers.
+:p When it comes to measuring RSS What is the difrference between MSE and MAE?
+?x
+![[Pasted image 20250701213729.png]]
+
+#### Subset Selection
+Subset selection. By default, we use all the predictors in a linear model. However, in practice, it’s important to narrow down the number of features, and only include the most important features. One way is best subset selection, which tries each model with & predictors, out of possible ones, where k < p. Then, you choose the best subset model using a regression metric like R?. While this guarantees the best result, it can be computationally infeasible as p increases (due to the exponential number of combinations to try). Additionally, by trying every option in a large search space, you're likely to get model that overfits with a high variance in coefficient estimates
+:p How does subset selection work to reduce models complexity of a regression model?
+?x
+tries each model with & predictors, out ofp possible ones, where k < p. Then, you choose the best subset model using a regression metric like R?. While this guarantees the best result, it can be computationally infeasible as p increases (due to the exponential number of combinations to try).
+
+
+What is stepwise selection and how does it work? What it solves? Whats the difference with backward stepwise selection?
+?x
+we start with an empty model and iteratively add the most useful predictor. In backward stepwise selection, we start with the full model and iteratively remove the least useful predictor. While doing stepwise selection, we aim to find a model with high R? and low RSS, while considering the number of predictors using metnics like AIC or adjusted R?.
+
+
+### Linear Regression Assumptions
+Before you can use this technique, you must validate its four main assumptions to prevent erroneous results.
+- Linearity: The relationship between the feature set and the target variable is linear. 
+- Homoscedasticity: The variance of the residuals is constant. 
+- Independence: All observations are independent of one another. 
+- Normality: The distribution of Y is assumed to be normal.
+:p explain each point in non technical manner
+?x
+- **Linearity**: The effect of each input (feature) on the result (output) is consistent. If one feature increases, the result increases or decreases in a straight-line way, not in a curve or zigzag.
+- **Homoscedasticity**: The amount of error or noise in the predictions stays about the same no matter what the input values are. It doesn’t get bigger or smaller depending on the situation.
+- **Independence**: Each data point is separate and doesn’t influence the others. For example, one person’s income doesn’t affect another’s in your dataset.
+- **Normality**: The results (outputs) follow a bell-shaped curve. Most values are around the average, and very high or low values are rare.
+
+### Avoiding Linear Regression Pitfalls
+
+#### Heteroscedasticity
+p103
+
+
+
+
 
 
 
