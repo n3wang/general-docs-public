@@ -85,3 +85,16 @@ JavaScript
 C#
 Python
 x??
+
+
+Code that is declarative: Select all that apply.
+Is often an abstraction over imperative code
+Is typically context independent
+Is written primarily for humans, not computers
+Emphasizes how code executes
+?x
+Is often an abstraction over imperative code
+Is typically context independent
+Is written primarily for humans, not computers
+
+
