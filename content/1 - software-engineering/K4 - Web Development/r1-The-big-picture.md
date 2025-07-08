@@ -98,3 +98,21 @@ Is typically context independent
 Is written primarily for humans, not computers
 
 
+Code that is imperative: Select all that apply.
+1. Relies on context making it difficult to reuse
+2. Gives procedural instructions on how to do something
+3. Is usually easily understood at a glance
+4. Is explicit about the changes it wants to make
+?x
+5. Relies on context making it difficult to reuse
+6. Gives procedural instructions on how to do something
+7. Is explicit about the changes it wants to make
+
+
+What makes React Declarative? Select all that apply.
+It's easy to manipulate the DOM
+It describes what the Ul is based on state
+It allows you to trace the code as it runs
+It is an abstraction over imperative code
+?x
+
