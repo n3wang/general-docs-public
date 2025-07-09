@@ -175,5 +175,33 @@ Since a pure function will always return the same output for a given input, they
 ### Components
 
 
+#### Practice Questions
 
+Which of the following are benefits of HTML? Select all that apply.
+- [ ] It is declarative
+- [ ] It has semantic structure
+- [ ] It gives us tools for managing application complexity
+- [ ] It has a robust module system
+?x
+- [ ] It is declarative
+- [ ] It has semantic structure
+HTML is great for declaratively structuring a document, but it lacks the power and expressivity of JavaScript. React components bring these together to give us a "more powerful HTML".
+
+
+Is this a valid React component?
+```jsx
+export default function search() {
+  return <div>
+    <label htmlFor="search">Search</label>
+    <input id="search" placeholder="Enter some text" />
+  </div>
+}
+```
+?x
+No, it is not. The function (component) name needs to be capitalized in order for React (JSX) to understand the difference between an HTML element and a component.
+
+
+(True/False) As a rule, every React component must follow the Single Responsibility Principle.
+?x
+False,There is no rule stating that every React component must follow the single responsibility principle. However, it is a good guideline to follow.
 
