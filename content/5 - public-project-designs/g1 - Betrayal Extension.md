@@ -36,3 +36,6 @@ Inspired from The Ritual (2017)
 **Finding the Cure**
 - **The only cure** - You can kill the host and escape, the alive players will live and win the game. But you return empty handed and friends that you will never see again
 - **Investigating Bodies** You can use the zombies bodies to investigate at the kitchen/library , which takes a intelligence save and an item, automatically lose mental damage
+
+
+## 
