@@ -115,4 +115,5 @@ It describes what the Ul is based on state
 It allows you to trace the code as it runs
 It is an abstraction over imperative code
 ?x
-
+It describes what the UI is based on State
+It is an abstraction ovver imperative code
