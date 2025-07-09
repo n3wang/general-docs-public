@@ -117,3 +117,18 @@ It is an abstraction over imperative code
 ?x
 It describes what the UI is based on State
 It is an abstraction ovver imperative code
+
+### Pure Functions
+
+- Have a return value, should return the same type of ouput
+- no side effects:doesnt delete anything outside of it
+- testable (given certain input, expected output)
+
+
+
+
+
+
+
+
+
