@@ -125,9 +125,54 @@ It is an abstraction ovver imperative code
 - testable (given certain input, expected output)
 
 
+#### The benefits
+Composable
+
+Because these functions don't depend on the context of the application and instead receive their inputs via explicit arguments, they're entirely program agnostic and therefore, extremely composable and reusable.
+
+You can take these functions and compose them into or reuse them in any application, and they'll Just Work™.
+
+Cacheable
+
+Because these functions always return the same output given a certain input, the results can be cached. There's no use in calling these functions more than once given the same input, since the output will always be the same.
 
 
+Is this a pure function?
+```js
+function getGameProgress(gameId)
+{ return localStorage.getItem(gameId); }
+```
+?x
+- no
+Among a few other reasons, if we call this function multiple times, we could get a different result each time – making it an impure function.
 
+
+Why isn't this a pure function?
+```js
+function upperCaseName(name) {
+  return name.toUpperCase();
+}
+```
+Because it does string manipulation
+Because the output is not guaranteed to be the same for the same input
+Because name isn't guaranteed to be a string
+It is a pure function
+?x
+- Is a pure function
+While it's true that we can't be sure that name is a string, that alone does not make it an impure function. It will still return the same result given the same input, and does not rely on external state.
+
+A pure function: Select all that apply.
+- Always returns the same output for a given input
+- Has side effects
+- Is composable
+- Depends on external context
+?x
+- Always returns the same output for a given input
+- Depends on external context
+Since a pure function will always return the same output for a given input, they are predictable and easy to compose together. Impure functions with side effects, in contrast, are less predictable.
+
+
+### Components
 
 
 
