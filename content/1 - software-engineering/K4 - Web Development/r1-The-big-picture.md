@@ -288,5 +288,10 @@ export default function App() {
 ```
 
 
+### Props
+
+
+
+
 
 
