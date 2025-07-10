@@ -25,7 +25,7 @@ What are the advantages of using React? Select all that apply.
 
 
 #### What is the difference between imperative and declarative?
-Look at the following code and state why each is either imperative or declarative
+:p Look at the following code and state why each is either imperative or declarative
 code a
 ```js
 function add(arr) {
@@ -153,10 +153,10 @@ function upperCaseName(name) {
   return name.toUpperCase();
 }
 ```
-Because it does string manipulation
-Because the output is not guaranteed to be the same for the same input
-Because name isn't guaranteed to be a string
-It is a pure function
+- Because it does string manipulation
+- Because the output is not guaranteed to be the same for the same input
+- Because name isn't guaranteed to be a string
+- It is a pure function
 ?x
 - Is a pure function
 While it's true that we can't be sure that name is a string, that alone does not make it an impure function. It will still return the same result given the same input, and does not rely on external state.
@@ -289,6 +289,8 @@ export default function App() {
 
 
 ### Props
+
+What are props?::Props are to components what arguments are to functions.
 
 
 
