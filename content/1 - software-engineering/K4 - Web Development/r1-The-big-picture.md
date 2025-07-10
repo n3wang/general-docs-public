@@ -256,5 +256,37 @@ What to consider?
 </ul>
 ```
 
+#### Rendering List challenge
+Given an array of friends, create a list item for every friend inside of our unordered list. Note: The items in our friends array don't have their own unique keys. You need to improvise.
+- Render an unordered list with all of the friends
+- Each list item should display the correct name
+- Each list item should be given a unique key
+:p Complete this UI Leetcode Challenge
+[Rendering Lists Challenge - ui.dev](https://ui.dev/c/react/rendering-lists-challenge)
+?x
+```jsx
+function List() {
+  const friends = [
+    { id: 893, name: "Lynn" },
+    { id: 871, name: "Alex" },
+    { id: 982, name: "Ben" },
+    { id: 61, name: "Mikenzi" }
+  ];
+  return (
+    <ul> 
+      {friends.map((friend) => (
+      <li key={friend.id}>
+        {friend.name}
+      </li>
+      ))}  
+    </ul>
+  );
+}
+export default function App() {
+  return <List />;
+}
+```
+
+
 
 
