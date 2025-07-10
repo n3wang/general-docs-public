@@ -205,3 +205,56 @@ No, it is not. The function (component) name needs to be capitalized in order fo
 ?x
 False,There is no rule stating that every React component must follow the single responsibility principle. However, it is a good guideline to follow.
 
+
+What is a React component?
+a function that returns some UI
+a function that returns a description of the UI
+?x
+a function that returns a description of the UI
+
+How do you use variables in JSX?
+Wrap them in $\{\{\}\}$
+Wrap them in \{\}
+Wrap them in []
+Wrap them in
+?x
+Is wrapped on brackets: {}
+
+
+What's wrong with this code? Select all that apply.
+```jsx
+function home () {
+  return (
+    <Header />
+    <content />
+    <Footer />
+  )
+}
+```
+Nothing
+You can't render adjacent parent elements in JSX
+The browser will throw an error when it sees the opening ()
+You need to wrap the return value in <React.Fragment>
+You can't have lowercase component names
+?x
+You can't render adjacent parent elements in JSX
+You need to wrap the return value in <React.Fragment>
+You can't have lowercase component names
+
+
+Lets say that you  had tweets and want to create a list on jsx
+What to consider?
+?x
+- Use the declarative way to map the tweet per each
+- Show the list of tiems
+- Show the idon each list to make it different and track its state
+```jsx
+<ul id="tweets">
+    {tweets.map((tweet) => (
+        <li key={tweet.id}>{tweet.text}</li>
+    ))}
+</ul>
+```
+
+
+
