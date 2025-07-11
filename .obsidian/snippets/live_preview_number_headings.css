@@ -1,0 +1,162 @@
+/* -----------------------------------------------------------------------------
+Desc: Display numbers for headings, without including them in the file.
+      Only works for live preview.
+      Displays also ?x as ---- and lower cased
+
+Auth: Nelson Wang
+----------------------------------------------------------------------------- */
+
+/* Numbered headings. ------------------------------------------------------- */
+.cm-content {
+  counter-reset: H2live H3live H4live H5live H6live !important;
+  
+}
+.HyperMD-header-1 {
+  font-family: MJXZERO, MJXTEX !important;
+  counter-reset: H2live !important;
+}
+
+.HyperMD-header-2 {
+  font-family: MJXZERO, MJXTEX !important;
+  counter-reset: H3live !important;
+}
+.HyperMD-header-2:before {
+  counter-increment: H2live !important;
+  content: counter(H2live) ".\0000a0\0000a0\0000a0" !important;
+}
+
+/* Edit mode */
+.cm-line {
+}
+
+/* Target images inside HyperMD quotes */
+.HyperMD-quote img {
+  max-width: 80% !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tables. ----------------------------------------------------------------------------- */
+table,
+pre {
+  page-break-inside: avoid !important;
+}
+table {
+  font-family: Times !important;
+  /* font-family: MJXZERO, MJXTEX !important; */
+  font-size: 10pt !important;
+  text-align: center !important;
+  margin: 5px auto  !important;
+  border-top: 1px solid #292929 !important;
+  border-bottom: 1px solid #292929 !important;
+}
+th {
+  /* Table headers. */
+  color: black !important;
+  font-weight: normal !important;
+  border: none !important;
+  border-bottom: 1px solid darkgray !important;
+}
+td {
+  border: none !important;
+}
+
+tbody{
+    border: none !important;
+  padding: 2px 5px 5px 6px !important;
+}
+
+.cm-table-widget + .HyperMD-quote span:nth-of-type(2){
+  /* display: block; */
+  font-size: 1em;
+  color: gray;
+  font-style: italic;
+  margin-top: -0.5em;
+  padding-left: 2em;
+  /* text-align: center; */
+}
+
+.cm-table-widget + .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before
+{
+     display: none !important;
+}
+
+/* Expand the wrapper that constrains the table */
+.cm-table-widget .table-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+
+/* Optional: expand individual cell wrappers */
+.cm-table-widget .table-cell-wrapper {
+  width: 100% !important;
+  white-space: nowrap;
+}
+
+/* Optional: allow contents to break out */
+.cm-table-widget th,
+.cm-table-widget td {
+  white-space: nowrap !important;
+  text-align: center;
+}
+
+.math-block + .HyperMD-quote span:nth-of-type(2) {
+  /* display: block; */
+  font-size: 1em;
+  color: gray;
+  font-style: italic;
+  margin-top: -0.5em;
+  text-align: center;
+  padding-right: 5em;
+}
+
+
+
+.HyperMD-quote:has(img) + .HyperMD-quote span.cm-quote {
+  display: block;
+  font-size: 1em;
+  color: gray;
+  font-style: italic;
+  margin-top: -0.5em;
+  text-align: center;
+}
+
+.HyperMD-header-3 {
+  font-family: MJXZERO, MJXTEX !important;
+  counter-reset: H4live !important;
+}
+.HyperMD-header-3:before {
+  counter-increment: H3live !important;
+  content: counter(H2live) "." counter(H3live) ".\0000a0\0000a0\0000a0" !important;
+}
+
+.HyperMD-header-4 {
+  font-family: MJXZERO, MJXTEX !important;
+  counter-reset: H5live !important;
+}
+.HyperMD-header-4:before {
+  counter-increment: H4live !important;
+  content: counter(H2live) "." counter(H3live) "." counter(H4live) ".\0000a0\0000a0\0000a0" !important;
+}
+
+.HyperMD-header-5 {
+  font-family: MJXZERO, MJXTEX !important;
+  counter-reset: H6live !important;
+}
+.HyperMD-header-5:before {
+  counter-increment: H5live !important;
+  content: counter(H2live) "." counter(H3live) "." counter(H4live) "." counter(H5live)
+    ".\0000a0\0000a0\0000a0" !important;
+}
+
+.HyperMD-header-6:before {
+  counter-increment: H6live !important;
+  content: counter(H2live) "." counter(H3live) "." counter(H4live) "." counter(H5live) "."
+    counter(H6live) ".\0000a0\0000a0\0000a0" !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+  padding-right: 2px !important;
+  display: none;
+}

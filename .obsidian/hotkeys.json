@@ -1,0 +1,11 @@
+{
+  "audio-recorder:start": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "A"
+    }
+  ]
+}
