@@ -279,3 +279,201 @@ $$
 1+1 y 1 y=\frac{(1.08)^2}{1.04}=1 + 12.154 \%
 $$
 
+
+### Questions
+
+An asset manager's portfolio had the following annual rates of return:
+
+| Year | Return |
+| :--- | :--- |
+| $20 \times 7$ | $+6 \%$ |
+| $20 \times 8$ | $-37 \%$ |
+| $20 \times 9$ | $+27 \%$ |
+
+The manager states that the return for the period is $-5.34 \%$. The manager has reported the:
+A) arithmetic mean return.
+B) geometric mean return.
+C) holding period return.
+
+A bond was purchased exactly one year ago for $\$ 910$ and was sold today for $\$ 1,020$. During the year, the bond made two semi-annual coupon payments of $\$ 30$. What is the holding period return?
+A) $12.1 \%$.
+B) $18.7 \%$.
+C) $6.0 \%$.
+?x
+To calculate the Holding Period Return (HPR), use the formula:
+$$
+\text { HPR }=\frac{\text { Income }+ \text { Price Change }}{\text { Initial Price }}=\frac{\left(\text { Coupon Payments }+\left(P_{\text {final }}-P_{\text {initial }}\right)\right)}{P_{\text {initial }}}
+$$
+Given:
+- $P_{\text {initial }}=910$
+- $P_{\text {final }}=1020$
+- Coupon payments $=2 \times 30=60$
+Plug into the formula:
+$$
+\mathrm{HPR}=\frac{60+(1020-910)}{910}=\frac{60+110}{910}=\frac{170}{910} \approx 0.1868=18.7 \%
+$$
+
+
+
+An investor buys a share of stock for $\$ 200.00$ at time $t=0$. At time $t=1$, the investor buys an additional share for $\$ 225.00$. At time $t=2$ the investor sells both shares for $\$ 235.00$. During both years, the stock paid a per share dividend of $\$ 5.00$. What are the approximate time-weighted and money-weighted returns respectively?
+A) $10.8 \% ; 9.4 \%$.
+В) $7.7 \% ; 7.7 \%$.
+C) $9.0 \% ; 15.0 \%$.
+?x
+A) $10.8 \% ; 9.4 \%$.
+
+
+Wei Zhang has funds on deposit with Iron Range bank. The funds are currently earning 6\% interest. If he withdraws $\$ 15,000$ to purchase an automobile, the $6 \%$ interest rate can be best thought of as a(n):
+A) discount rate.
+B) financing cost.
+C) opportunity cost.
+?x
+C) opportunity cost.
+The return Wei gives up by using his money elsewhere
+Opportunity Cost	The return Wei gives up by using his money elsewhere
+Discount Rate	Used to calculate present value of future cash flows
+Financing Cost	Cost incurred when borrowing funds (e.g., loan interest)
+
+
+An investor buys one share of stock for $100. At the end of year one she buys three more shares at $89 per share. At the end of year two she sells all four shares for $98 each. The stock paid a dividend of $1.00 per share at the end of year one and year two. What is the investor's time-weighted rate of return?
+??x
+A)0.06%.
+The holding period return in year one is ($89.00 – $100.00 + $1.00) / $100.00 = -10.00%.
+
+The holding period return in year two is ($98.00 – $89.00 + $1.00) / $89 = 11.24%.
+
+The time-weighted return is [{1 + (-0.1000)}{1 + 0.1124}]1/2 – 1 = 0.06%.
+x??
+
+
+An investor buys one share of stock for $\$ 100$. At the end of year one she buys three more shares at $\$ 89$ per share. At the end of year two she sells all four shares for $\$ 98$ each. The stock paid a dividend of $\$ 1.00$ per share at the end of year one and year two. What is the investor's money-weighted rate of return?
+A) $0.06 \%$.
+B) $5.29 \%$.
+C) $6.35 \%$.
+?x
+C) $6.35 \%$.
+1. Press CF (Cash Flow)
+2. Input initial cash flow:
+- $\mathrm{CF} 0=-100 \rightarrow$ press ENTER, then $\downarrow$
+3. Input first year net cash flow:
+- $\mathrm{C} 01=-266 \rightarrow$ ENTER, then
+- $F 01=1 \rightarrow$ ENTER, then $\downarrow$
+4. Input second year cash flow:
+- $\mathrm{C} 02=396 \rightarrow$ ENTER, then $\downarrow$
+- $\mathrm{F} 02=1 \rightarrow$ ENTER
+1. Press IRR, then CPT (Compute)
+
+
+Selmer Jones has just inherited some money and wants to set some of it aside for a vacation in Hawaii one year from today. His bank will pay him 5\% interest on any funds he deposits. In order to determine how much of the money must be set aside and held for the trip, he should use the $5 \%$ as a:
+A) discount rate.
+B) opportunity cost.
+C) required rate of return.
+??x
+
+discount rate.
+
+|Term|Meaning in Context|
+|---|---|
+|**Discount Rate**|✔ Used to find today's value of future money|
+|Opportunity Cost|The value of the best alternative use of funds|
+|Required Rate of Return|Used in investments to judge performance threshold|
+
+x??
+
+
+On January 1, Jonathan Wood invests $\$ 50,000$. At the end of March, his investment is worth $\$ 51,000$. On April 1, Wood deposits \$10,000 into his account, and by the end of June, his account is worth \$60,000. Wood withdraws \$30,000 on July 1 and makes no additional deposits or withdrawals the rest of the year. By the end of the year, his account is worth $\$ 33,000$. The time-weighted return for the year is closest to:
+A) $10.4 \%$.
+B) $5.5 \%$.
+C) $7.0 \%$.
+??x
+a) $10.4 \%$.
+
+|Date|Event|
+|---|---|
+|Jan 1|Invest $50,000|
+|Mar 31|Value = $51,000|
+|Apr 1|Add $10,000 (now total = $61,000)|
+|Jun 30|Value = $60,000|
+|Jul 1|Withdraw $30,000 → balance = $30,000|
+|Dec 31|Value = $33,000|
+Period 1: Jan $1 \rightarrow$ Mar 31
+
+$$
+R_1=\frac{51,000-50,000}{50,000}=2.00 \%
+$$
+
+
+Period 2: Apr $1 \rightarrow$ Jun 30
+Start $=51,000+10,000=61,000$ (accounting for April 1 deposit)
+
+$$
+R_2=\frac{60,000-61,000}{61,000}=-1.639 \%
+$$
+
+
+Period 3: Jul $1 \rightarrow$ Dec 31
+Start $=\$ 30,000$ (after $\$ 30 \mathrm{k}$ withdrawal)
+
+$$
+R_3=\frac{33,000-30,000}{30,000}=10.00 \%
+$$
+
+- Step 2: Chain the returns
+
+$$
+\begin{gathered}
+\mathrm{TWR}=\left(1+R_1\right)\left(1+R_2\right)\left(1+R_3\right)-1 \\
+=(1.02)(0.98361)(1.10) \approx 1.1044-1=10.44 \%
+\end{gathered}
+$$
+
+x??
+
+An investor makes the following investments:
+- She purchases a share of stock for $\$ 50.00$.
+- After one year, she purchases an additional share for $\$ 75.00$.
+- After one more year, she sells both shares for $\$ 100.00$ each.
+- There are no transaction costs or taxes.
+During year one, the stock paid a $\$ 5.00$ per share dividend. In year 2 , the stock paid a $\$ 7.50$ per share dividend. The investor's required return is $35 \%$. Her money-weighted return is closest to:
+A) $48.9 \%$.
+B) $16.1 \%$.
+C) $-7.5 \%$.
+??x
+
+ $48.9 \%$.
+
+| Time (Years) | Event                                                         | Net Cash Flow     |
+| ------------ | ------------------------------------------------------------- | ----------------- |
+| 0            | Buy 1 share @ $50                                             | **−50**           |
+| 1            | Receive $5 dividend, buy 1 share @ $75                        | **−70** = −75 + 5 |
+| 2            | Receive $7.50 × 2 = $15, sell both shares @ $100 = $200 total | **+215**          |
+
+Press CF
+
+CF0 = -50 → ENTER → ↓
+
+C01 = -70 → ENTER → ↓
+F01 = 1 → ENTER → ↓
+
+C02 = 215 → ENTER → ↓
+F02 = 1 → ENTER
+
+Press IRR, then CPT
+
+x??
+
+
+Given a holding period return of R , the continuously compounded rate of return is:
+A) $e^R-1$.
+B) $\ln (1+R)$.
+C) $\ln (1+R)-1$.
+??x
+ $\ln (1+R)$
+
+|Option|Expression|Meaning|
+|---|---|---|
+|A|eR−1e^R - 1|This converts **continuously compounded return to simple return**, not the other way around. ❌|
+|B|ln⁡(1+R)\ln(1 + R)|✅ Correct formula for converting HPR to continuously compounded return|
+|C|ln⁡(1+R)−1\ln(1 + R) - 1|This subtracts 1 unnecessarily. ❌|
+
+x??
