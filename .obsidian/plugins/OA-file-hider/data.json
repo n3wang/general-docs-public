@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "hiddenList": [
+    "img",
+    "node_modules",
+    "docs",
+    "CODE_OF_CONDUCT.md",
+    "public",
+    "quartz"
+  ]
+}
