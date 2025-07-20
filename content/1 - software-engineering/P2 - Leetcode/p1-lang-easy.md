@@ -4,10 +4,17 @@ tags:
   - software-engineer
 ---
 - If you are studying this set. My suggestion is to find the code, restart it. on the vscode by finding the right file
+- This set is designed to learn a language, ideally you would show the pseduocode at all times and have them practice using the pseudocode if needed.
 
+## Power of Four
+:d easy
+:t Math, Bit Manipulation, Recursion
+:l [Power of Four - LeetCode](https://leetcode.com/problems/power-of-four/description/)
 
 Given an integer `n`, return _`true` if it is a power of four. Otherwise, return `false`_.
 An integer `n` is a power of four, if there exists an integer `x` such that `n == 4x`
+
+### Pseudocode
 ```python
 Function isPowerOfFour(n):
     Convert n to binary string → binaryRepresentation
@@ -25,7 +32,8 @@ Function isPowerOfFour(n):
 
     Return true
 ```
-?x
+
+### Solution
 ```java
 class Solution {
     public boolean isPowerOfFour(int n) {
@@ -420,7 +428,7 @@ class Solution {
 
 ---
 
-###  [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/)
+##  [3342. Find Minimum Time to Reach Last Room II](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/)
 prompt:There is a dungeon with `n x m` rooms arranged as a grid.
 
 You are given a 2D array `moveTime` of size `n x m`, where `moveTime[i][j]` represents the **minimum** time in seconds when you can **start moving** to that room. You start from the room `(0, 0)` at time `t = 0` and can move to an **adjacent** room. Moving between **adjacent** rooms takes one second for one move and two seconds for the next, **alternating** between the two.

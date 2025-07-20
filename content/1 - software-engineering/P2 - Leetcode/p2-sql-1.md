@@ -3,7 +3,7 @@ tags:
   - software-engineer
   - sql
 ---
-
+- This set of problems are leetcode sql based, with the objectives of sharping your sql skills before an intervew
 
 Write a solution to find all dates' `id` with higher temperatures compared to its previous dates
 ```sql
