@@ -6,7 +6,7 @@ tags:
 - If you are studying this set. My suggestion is to find the code, restart it. on the vscode by finding the right file
 - This set is designed to learn a language, ideally you would show the pseduocode at all times and have them practice using the pseudocode if needed.
 
-## Power of Four
+## 342. Power of Four
 :d easy
 :t Math, Bit Manipulation, Recursion
 :l [Power of Four - LeetCode](https://leetcode.com/problems/power-of-four/description/)
@@ -57,8 +57,17 @@ class Solution {
 ```
 
 
+## 118. Pascal's Triangle
+:l [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+
+> ![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
 Given an integer `numRows`, return the first numRows of **Pascal's triangle**.
 In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
+
+
+### Pseudocode
+
 ```java
 Function generate(numRows):
     Initialize triangle as an empty list of lists
@@ -83,7 +92,10 @@ Function generate(numRows):
 
     Return triangle
 ```
-?x
+
+
+### Solution
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -118,10 +130,37 @@ class Solution {
 ```
 
 
+## 119. Pascal's Triangle II
 
 Given an integer `rowIndex`, return the `rowIndexth` (**0-indexed**) row of the **Pascal's triangle**.
 In **Pascal's triangle**, each number is the sum of the two numbers directly above it as shown:
-?x
+
+> ![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+**Example 1:**
+
+```
+**Input:** rowIndex = 3
+**Output:** [1,3,3,1]
+```
+
+**Example 2:**
+
+```
+
+**Input:** rowIndex = 0
+**Output:** [1]
+```
+
+**Example 3:**
+
+```
+**Input:** rowIndex = 1
+**Output:** [1,1]
+```
+
+### Solution
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -147,9 +186,27 @@ class Solution {
 }
 ```
 
+## 257. Binary Tree Paths
+:l [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+:d easy
+:t String, Backtracking, Tree, Depth-First Search, Binary Tree
 
 Given the `root` of a binary tree, return _the preorder traversal of its nodes' values_.
-?x
+>![](https://assets.leetcode.com/uploads/2021/03/12/paths-tree.jpg)
+
+```
+Input: root = [1,2,3,null,5]
+Output: ["1->2->5","1->3"]
+Example 2:
+
+Input: root = [1]
+Output: ["1"]
+```
+
+
+
+### Solution
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -184,10 +241,44 @@ class Solution {
 }
 ```
 
-
+## 145. Binary Tree Postorder Traversal
 
 Given the `root` of a binary tree, return _the postorder traversal of its nodes' values_.
-?x
+ple 1:
+
+```
+Input: root = [1,null,2,3]
+Output: [3,2,1]
+```
+
+Explanation:
+> ![](https://assets.leetcode.com/uploads/2024/08/29/screenshot-2024-08-29-202743.png)
+
+
+```
+Example 2:
+Input: root = [1,2,3,4,5,null,8,null,null,6,7,9]
+Output: [4,6,7,5,2,9,8,3,1]
+```
+
+Explanation:
+> ![](https://assets.leetcode.com/uploads/2024/08/29/tree_2.png)
+Example 3:
+
+```
+Input: root = []
+Output: []
+
+Example 4:
+Input: root = [1]
+Output: [1]
+
+ Constraints:
+The number of the nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
+```
+### Solution
+
 ```java
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
@@ -212,11 +303,14 @@ class Solution {
 }
 ```
 
-
+## 160. Intersection of Two Linked Lists
+:l [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 
 Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
-![[Pasted image 20250215224228.png]]
-?x
+
+![](https://assets.leetcode.com/uploads/2021/03/05/160_statement.png)
+
+### Solution
 ```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

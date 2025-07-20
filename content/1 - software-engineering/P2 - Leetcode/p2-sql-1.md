@@ -3,7 +3,12 @@ tags:
   - software-engineer
   - sql
 ---
+:t 
 - This set of problems are leetcode sql based, with the objectives of sharping your sql skills before an intervew
+
+## 118. Pascal's Triangle
+:l [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+:t Array, Dynamic Programming
 
 Write a solution to find all dates' `id` with higher temperatures compared to its previous dates
 ```sql
@@ -19,7 +24,9 @@ There are no different rows with the same recordDate.
 This table contains information about the temperature on a certain day.
 ```
 https://leetcode.com/problems/rising-temperature/?envType=study-plan-v2&envId=top-sql-50
-?x
+
+### Solution
+
 ```sql
 SELECT id FROM (
     SELECT id, b - a as difference FROM
