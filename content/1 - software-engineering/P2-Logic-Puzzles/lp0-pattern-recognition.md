@@ -34,18 +34,17 @@ A constraint where input is smaller than <= 20
 Tree/Binary Tree/BST: 
 - Tree traversal (DFS/BFS) 
 - DFS for: all paths, recursive exploration, preorder/inorder/postorder 
-- BFS for: level-by-level, shortest path in 
-
-unweighted tree 
+- BFS for: level-by-level, shortest path in unweighted tree 
 - Consider: tree properties, parent-child relationships 
-- Graph (nodes + edges): 
-BFS for shortest path 
-DFS for connected components 
-● Union Find for "connected components" or "number of 
-groups" 
-● Topological sort for dependencies 
+
+Graph (nodes + edges): 
+- BFS for shortest path 
+- DFS for connected components 
+- Union Find for "connected components" or "number of groups" 
+- Topological sort for dependencies 
+
 2D Grid/Matrix: 
-● DFS/BFS for "islands" problems 
+- DFS/BFS for "islands" problems 
 ● Union Find for connected regions 
 ● Dynamic programming for path problems 
 ● Consider: 4-directional or 8-directional movement 
