@@ -315,7 +315,8 @@ flowchart LR
 
 ## 1717. Maximum Score From Removing Substrings
 
-
+:l 
+:y [1717. Maximum Score From Removing Substrings](https://www.youtube.com/watch?v=ssc88WyNBYQ)
 ### Theory
 
 - Idea is to have in n loops required until it gathers prioritizing 
