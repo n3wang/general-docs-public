@@ -65,7 +65,8 @@ Linked List:
 - Dummy node techniques 
 - Cycle detection 
 
-## Step 3: Analyze Output Format  
+## Step 3: Analyze Output Format 
+
 List of Lists (combinations, subsets, paths): 
 - Backtracking is almost always the answer 
 - Generate all possibilities 
@@ -100,10 +101,11 @@ Two Pointers Keywords:
 - "Remove duplicates" 
 
 Heap Keywords: 
-● "K largest" or "K smallest" 
-● "Top K elements" 
-● "Median" 
-● "Priority" 
+- "K largest" or "K smallest" 
+- "Top K elements" 
+- "Median" 
+- "Priority" 
+
 Stack Keywords: 
 ● "Parentheses" or "brackets" 
 ● "Valid expression" 
