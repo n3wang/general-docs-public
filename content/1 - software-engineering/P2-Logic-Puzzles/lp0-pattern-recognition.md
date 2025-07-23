@@ -85,17 +85,20 @@ Ordered List (sorted sequence, valid task order):
 - Heap for maintaining order 
 
 ## Step 4: Keyword Pattern Recognition  
+
 Dynamic Programming Keywords: 
-● "Number of ways" 
-● "Maximum/minimum" + "sum/profit/cost" 
-● "Can you reach" 
-● "Longest/shortest subsequence" 
-● "Optimal" or "best" 
+- "Number of ways" 
+- "Maximum/minimum" + "sum/profit/cost" 
+- "Can you reach" 
+- Longest/shortest subsequence" 
+- "Optimal" or "best" 
+
 Two Pointers Keywords: 
-● "Palindrome" 
-● "Sorted array" 
-● "Target sum" 
-● "Remove duplicates" 
+- "Palindrome" 
+- "Sorted array" 
+- "Target sum" 
+- "Remove duplicates" 
+
 Heap Keywords: 
 ● "K largest" or "K smallest" 
 ● "Top K elements" 
