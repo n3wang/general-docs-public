@@ -45,38 +45,46 @@ Graph (nodes + edges):
 
 2D Grid/Matrix: 
 - DFS/BFS for "islands" problems 
-● Union Find for connected regions 
-● Dynamic programming for path problems 
-● Consider: 4-directional or 8-directional movement 
+- Union Find for connected regions 
+- Dynamic programming for path problems 
+- Consider: 4-directional or 8-directional movement 
+
 Sorted Array: 
-● Two pointers technique 
-● Binary search 
-● Greedy approach 
+- Two pointers technique 
+- Binary search 
+- Greedy approach 
+
 String: 
-● Two pointers for palindromes 
-● Sliding window for substrings 
-● Trie for word problems 
-● Stack for parentheses/brackets 
+- Two pointers for palindromes 
+- Sliding window for substrings 
+- Trie for word problems 
+- Stack for parentheses/brackets 
+
 Linked List: 
-● Two pointers (fast/slow) 
-● Dummy node techniques 
-● Cycle detection 
-Step 3: Analyze Output Format  
+- Two pointers (fast/slow) 
+- Dummy node techniques 
+- Cycle detection 
+
+## Step 3: Analyze Output Format  
 List of Lists (combinations, subsets, paths): 
-● Backtracking is almost always the answer 
-● Generate all possibilities 
-● Use recursion with choice/no-choice pattern 
+- Backtracking is almost always the answer 
+- Generate all possibilities 
+- Use recursion with choice/no-choice pattern 
+
 Single Number (max/min profit, cost, ways, jumps): 
-● Dynamic Programming for optimization 
-● Greedy for local optimal choices 
-● Mathematical approach for counting 
+- Dynamic Programming for optimization 
+- Greedy for local optimal choices 
+- Mathematical approach for counting 
+
 Modified Array/String (in-place operations): 
-● Two Pointers for in-place modifications 
+- Two Pointers for in-place modifications 
+
 Ordered List (sorted sequence, valid task order): 
-● Sorting with custom comparators 
-● Topological Sort for dependencies 
-● Heap for maintaining order 
-Step 4: Keyword Pattern Recognition  
+- Sorting with custom comparators 
+- Topological Sort for dependencies 
+- Heap for maintaining order 
+
+## Step 4: Keyword Pattern Recognition  
 Dynamic Programming Keywords: 
 ● "Number of ways" 
 ● "Maximum/minimum" + "sum/profit/cost" 
