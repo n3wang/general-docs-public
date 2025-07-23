@@ -107,20 +107,23 @@ Heap Keywords:
 - "Priority" 
 
 Stack Keywords: 
-● "Parentheses" or "brackets" 
-● "Valid expression" 
-● "Nested structure" 
-● "Undo operations" 
+- "Parentheses" or "brackets" 
+- "Valid expression" 
+- "Nested structure" 
+- "Undo operations" 
+
 Monotonic Stack Keywords: 
-● "Next greater element" 
-● "Next smaller element" 
+- "Next greater element" 
+- "Next smaller element" 
+
 HashMap Keywords: 
-● "Count frequency" 
-● "Find duplicates" 
-● "Anagram" 
+- "Count frequency" 
+- "Find duplicates" 
+- "Anagram" 
+
 Trie Keywords: 
-● "Word search" 
-● "Word prefixes" 
+- "Word search" 
+- "Word prefixes" 
 Greedy Keywords: 
 ●  "Minimum operations" 
 Union Find Keywords: 
