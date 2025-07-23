@@ -124,16 +124,22 @@ HashMap Keywords:
 Trie Keywords: 
 - "Word search" 
 - "Word prefixes" 
+
 Greedy Keywords: 
-●  "Minimum operations" 
+- "Minimum operations" 
+- maximum with limited
+
+
 Union Find Keywords: 
-●  "Connected components" 
-● "Number of groups" 
+- "Connected components" 
+- "Number of groups" 
+
 Binary Search Keywords: 
-● "Kth element" 
-● "Search in sorted" 
-● "Minimize maximum" 
-● "First/last occurrence" 
+- "Kth element" 
+- "Search in sorted" 
+- "Minimize maximum" 
+- "First/last occurrence" 
+
 Bit Manipulation: 
 ● "XOR" operations 
 ● "Single number" problems 
