@@ -1,17 +1,17 @@
 
-#### Step 1: Check The Constraints 
+## Step 1: Check The Constraints 
 
 
 Small n (≤ 20): 
-A constraint where input is smaller than <= 20 to a max of 10^3
+A constraint where input is smaller than <= 20 to a max of 10^3  probably means (name 3 patterns)
 ?x
 - Brute force approaches are viable 
 - Backtracking and recursion 
 - Exponential time complexity (2^n, n!) is acceptable 
 - Try all possible combinations/permutations 
 
-Medium n (10^3 to 10^6): 
-A constraint where input is smaller than <= 10^6 andlarger than 10^3
+Medium n ($10^3$ to $10^6$): 
+A constraint where input is smaller than <= 10^6 andlarger than $10^3$ probably means (name 3 patterns)
 ?x
 - No brute force solutions 
 - Linear time O(n) or O(n log n) solutions 
@@ -29,19 +29,18 @@ A constraint where input is smaller than <= 20
 - Mathematical formulas 
 - O(1) constant time approaches 
 
-Step 2: Analyze Input Format  
+## Step 2: Analyze Input Format  
 
 Tree/Binary Tree/BST: 
-● Tree traversal (DFS/BFS) 
-● DFS for: all paths, recursive exploration, 
-preorder/inorder/postorder 
-● BFS for: level-by-level, shortest path in 
+- Tree traversal (DFS/BFS) 
+- DFS for: all paths, recursive exploration, preorder/inorder/postorder 
+- BFS for: level-by-level, shortest path in 
+
 unweighted tree 
-● Consider: tree properties, parent-child 
-relationships 
-Graph (nodes + edges): 
-● BFS for shortest path 
-● DFS for connected components 
+- Consider: tree properties, parent-child relationships 
+- Graph (nodes + edges): 
+BFS for shortest path 
+DFS for connected components 
 ● Union Find for "connected components" or "number of 
 groups" 
 ● Topological sort for dependencies 
