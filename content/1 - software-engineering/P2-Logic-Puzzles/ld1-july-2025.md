@@ -563,8 +563,8 @@ class Solution {
 
 ## 2210. Count Hills and Valleys in an Array
 
-:d difficulty
-:l link
+:d easy
+:l https://leetcode.com/problems/count-hills-and-valleys-in-an-array
 :t tags,tags2
 
 ### Theory
