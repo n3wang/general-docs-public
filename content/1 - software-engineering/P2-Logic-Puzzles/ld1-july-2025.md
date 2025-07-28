@@ -481,6 +481,141 @@ public:
 > A flowchart of the process
 
 
+## 1717. Maximum Score From Removing Substrings
+
+:d medium
+:l https://leetcode.com/problems/maximum-score-from-removing-substrings/description/?envType=daily-question&envId=2025-07-24
+:t String, Stack, Greedy
+
+You are given a string s and two integers x and y. You can perform two types of operations any number of times.
+
+- Remove substring "ab" and gain x points.
+	- For example, when removing "ab" from "cabxbae" it becomes "cxbae".
+- Remove substring "ba" and gain y points.
+	- For example, when removing "ba" from "cabxbae" it becomes "cabxe".
+Return the maximum points you can gain after applying the above operations on s.
+
+```
+**Input:** s = "cdbcbbaaabab", x = 4, y = 5
+**Output:** 19
+**Explanation:**
+- Remove the "ba" underlined in "cdbcbbaaabab". Now, s = "cdbcbbaaab" and 5 points are added to the score.
+- Remove the "ab" underlined in "cdbcbbaaab". Now, s = "cdbcbbaa" and 4 points are added to the score.
+- Remove the "ba" underlined in "cdbcbbaa". Now, s = "cdbcba" and 5 points are added to the score.
+- Remove the "ba" underlined in "cdbcba". Now, s = "cdbc" and 5 points are added to the score.
+Total score = 5 + 4 + 5 + 5 = 19.
+```
+
+```
+Input: s = "aabbaaxybbaabb", x = 5, y = 4
+Output: 20
+```
+
+**Constraints:**
+- `1 <= s.length <= 105`
+- `1 <= x, y <= 104`
+- `s` consists of lowercase English letters.
+
+
+
+### Theory
+
+
+### Solution
+
+```java
+class Solution {
+    public int maximumGain(String s, int x, int y) {
+        if (x > y) {
+            String[] result1 = removePair(s, 'a', 'b', x);
+            String[] result2 = removePair(result1[0], 'b', 'a', y);
+            return Integer.parseInt(result1[1]) + Integer.parseInt(result2[1]);
+        } else {
+            String[] result1 = removePair(s, 'b', 'a', y);
+            String[] result2 = removePair(result1[0], 'a', 'b', x);
+            return Integer.parseInt(result1[1]) + Integer.parseInt(result2[1]);
+        }
+    }
+
+    private String[] removePair(String s, char first, char second, int score) {
+        StringBuilder stack = new StringBuilder();
+        int total = 0;
+
+        for (char c : s.toCharArray()) {
+            int len = stack.length();
+            if (len > 0 && stack.charAt(len - 1) == first && c == second) {
+                stack.deleteCharAt(len - 1);
+                total += score;
+            } else {
+                stack.append(c);
+            }
+        }
+        return new String[]{stack.toString(), String.valueOf(total)};
+    }
+}
+```
+### Pseudocode
+
+
+> A flowchart of the process
+
+
+
+## 2210. Count Hills and Valleys in an Array
+
+:d difficulty
+:l link
+:t tags,tags2
+
+### Theory
+
+
+### Solution
+
+
+### Pseudocode
+
+
+> A flowchart of the process
+
+
+## Problem Name
+
+:d difficulty
+:l link
+:t tags,tags2
+
+### Theory
+
+
+### Solution
+
+
+### Pseudocode
+
+
+> A flowchart of the process
+
+
+
+## Problem Name
+
+:d difficulty
+:l link
+:t tags,tags2
+
+### Theory
+
+
+### Solution
+
+
+### Pseudocode
+
+
+> A flowchart of the process
+
+
 ## Problem Name
 
 :d difficulty
