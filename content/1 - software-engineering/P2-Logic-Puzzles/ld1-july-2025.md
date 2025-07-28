@@ -7,6 +7,7 @@
 	- :d difficulty
 	- :l leetcode link, can be multiple
 	- modes show python, run in java, show psudocode, run in java, python depending on difficulty
+---
 
 ## 1948. Delete Duplicate Folders in System
 :t array, Hash Table, String, Trie, Hash Function
@@ -311,7 +312,7 @@ flowchart LR
     Return --> End([End])
 ```
 
-
+---
 
 ## 1717. Maximum Score From Removing Substrings
 
