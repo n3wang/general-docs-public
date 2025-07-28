@@ -517,19 +517,6 @@ Similar to problems like:
 - Local extrema counting in time series
 
 
-```mermaid
-flowchart LR
-    A(Start: i = 1) --> B{Is nums(i) equal to nums(i + 1)?}
-    B -- Yes --> C[Skip i and continue]
-    B -- No --> D{Is it a hill or valley? \n (prev < nums(i) > nums(i+1) \n OR prev > nums(i) < nums(i+1))}
-    D -- Yes --> E[Increment result]
-    D -- No --> F[Do nothing]
-    E --> G[Set prev = nums(i)]
-    F --> G
-    G --> H[Increment i]
-    H --> B
-```
-
 
 
 
@@ -652,11 +639,43 @@ public:
 > A flowchart of the process
 
 
-## Problem Name
+## 2044. Count Number of Maximum Bitwise-OR Subsets
 
-:d difficulty
-:l link
-:t tags,tags2
+:d medium
+:l https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets
+:t Array, Backtracking, Bit Manipulation. Enumeration
+
+Given an integer array nums, find the maximum possible bitwise $\mathbf{O R}$ of a subset of nums and return the number of different non-empty subsets with the maximum bitwise $O R$.
+
+An array $a$ is a subset of an array $b$ if $a$ can be obtained from $b$ by deleting some (possibly zero) elements of b . Two subsets are considered different if the indices of the elements chosen are different.
+
+The bitwise $O R$ of an array $a$ is equal to $a[0] O R a[1] O R \ldots O R a[a$. length -1$]$ ( $\mathbf{0}$-indexed).
+
+```
+Example 1:
+
+Input: nums = [3,1]
+Output: 2
+Explanation: The maximum possible bitwise OR of a subset is 3. There are 2 subsets with a bitwise OR of 3:
+- [3]
+- [3,1]
+Example 2:
+
+Input: nums = [2,2,2]
+Output: 7
+Explanation: All non-empty subsets of [2,2,2] have a bitwise OR of 2. There are 23 - 1 = 7 total subsets.
+Example 3:
+
+Input: nums = [3,2,1,5]
+Output: 6
+Explanation: The maximum possible bitwise OR of a subset is 7. There are 6 subsets with a bitwise OR of 7:
+- [3,5]
+- [3,1,5]
+- [3,2,5]
+- [3,2,1,5]
+- [2,5]
+- [2,1,5]
+```
 
 ### Theory
 
