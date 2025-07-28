@@ -481,98 +481,171 @@ public:
 > A flowchart of the process
 
 
-## 1717. Maximum Score From Removing Substrings
-
-:d medium
-:l https://leetcode.com/problems/maximum-score-from-removing-substrings/description/?envType=daily-question&envId=2025-07-24
-:t String, Stack, Greedy
-
-You are given a string s and two integers x and y. You can perform two types of operations any number of times.
-
-- Remove substring "ab" and gain x points.
-	- For example, when removing "ab" from "cabxbae" it becomes "cxbae".
-- Remove substring "ba" and gain y points.
-	- For example, when removing "ba" from "cabxbae" it becomes "cabxe".
-Return the maximum points you can gain after applying the above operations on s.
-
-```
-**Input:** s = "cdbcbbaaabab", x = 4, y = 5
-**Output:** 19
-**Explanation:**
-- Remove the "ba" underlined in "cdbcbbaaabab". Now, s = "cdbcbbaaab" and 5 points are added to the score.
-- Remove the "ab" underlined in "cdbcbbaaab". Now, s = "cdbcbbaa" and 4 points are added to the score.
-- Remove the "ba" underlined in "cdbcbbaa". Now, s = "cdbcba" and 5 points are added to the score.
-- Remove the "ba" underlined in "cdbcba". Now, s = "cdbc" and 5 points are added to the score.
-Total score = 5 + 4 + 5 + 5 = 19.
-```
-
-```
-Input: s = "aabbaaxybbaabb", x = 5, y = 4
-Output: 20
-```
-
-**Constraints:**
-- `1 <= s.length <= 105`
-- `1 <= x, y <= 104`
-- `s` consists of lowercase English letters.
-
-
-
-### Theory
-
-
-### Solution
-
-```java
-class Solution {
-    public int maximumGain(String s, int x, int y) {
-        if (x > y) {
-            String[] result1 = removePair(s, 'a', 'b', x);
-            String[] result2 = removePair(result1[0], 'b', 'a', y);
-            return Integer.parseInt(result1[1]) + Integer.parseInt(result2[1]);
-        } else {
-            String[] result1 = removePair(s, 'b', 'a', y);
-            String[] result2 = removePair(result1[0], 'a', 'b', x);
-            return Integer.parseInt(result1[1]) + Integer.parseInt(result2[1]);
-        }
-    }
-
-    private String[] removePair(String s, char first, char second, int score) {
-        StringBuilder stack = new StringBuilder();
-        int total = 0;
-
-        for (char c : s.toCharArray()) {
-            int len = stack.length();
-            if (len > 0 && stack.charAt(len - 1) == first && c == second) {
-                stack.deleteCharAt(len - 1);
-                total += score;
-            } else {
-                stack.append(c);
-            }
-        }
-        return new String[]{stack.toString(), String.valueOf(total)};
-    }
-}
-```
-### Pseudocode
-
-
-> A flowchart of the process
-
-
 
 ## 2210. Count Hills and Valleys in an Array
 
 :d easy
 :l https://leetcode.com/problems/count-hills-and-valleys-in-an-array
-:t tags,tags2
+:t array
 
+You are given a 0-indexed integer array nums. An index i is part of a hill in nums if the closest non-equal neighbors of i are smaller than nums[i]. Similarly, an index i is part of a valley in nums if the closest non-equal neighbors of i are larger than nums[i]. Adjacent indices i and j are part of the same hill or valley if nums[i] == nums[j].
+
+Note that for an index to be part of a hill or valley, it must have a non-equal neighbor on both the left and right of the index.
+
+Return the number of hills and valleys in nums.
 ### Theory
+
+We treat flat regions (consecutive equal numbers) as not influencing the valley/hill status. Only the last different values before and after the current index matter. So for each index $i$ :
+- Let $a=$ last left unequal to nums $[i]$
+- Let $b=$ nums $[i]$
+- Let $c=$ first right unequal to nums $[i]$
+
+Then:
+- Hill: $a\langle b\rangle c$
+- Valley: $a>b<c$
+
+Since we only need to evaluate this once per unique peak/trough, the entire approach is linear.
+
+This greedy linear approach works when:
+- Only relative comparison (greater than, less than) determines the pattern.
+- Duplicate adjacent values can be collapsed to the last significant direction change.
+- You only need to check three relevant values: left, current, right.
+
+Similar to problems like:
+- Monotonic trend detection
+- Zig-zag subsequence detection
+- Local extrema counting in time series
+
+
+```mermaid
+flowchart LR
+    A(Start: i = 1) --> B{Is nums(i) equal to nums(i + 1)?}
+    B -- Yes --> C[Skip i and continue]
+    B -- No --> D{Is it a hill or valley? \n (prev < nums(i) > nums(i+1) \n OR prev > nums(i) < nums(i+1))}
+    D -- Yes --> E[Increment result]
+    D -- No --> F[Do nothing]
+    E --> G[Set prev = nums(i)]
+    F --> G
+    G --> H[Increment i]
+    H --> B
+```
+
+
+
+
 
 
 ### Solution
 
 
+Optimized
+
+```java
+class Solution {
+    public int countHillValley(int[] nums) {
+        int res = 0;
+        int n = nums.length;
+
+        // Keep track of the last non-equal element on the left
+        int prev = nums[0];
+
+        for (int i = 1; i < n - 1; i++) {
+            if (nums[i] == nums[i + 1]) continue;
+
+            if ((prev < nums[i] && nums[i] > nums[i + 1]) ||
+                (prev > nums[i] && nums[i] < nums[i + 1])) {
+                res++;
+            }
+            prev = nums[i];
+        }
+
+        return res;
+    }
+}
+
+```
+
+```java
+class Solution {
+    public int countHillValley(int[] nums) {
+        int res = 0; // number of peaks and valleys
+        int n = nums.length;
+        for (int i = 1; i < n - 1; ++i) {
+            if (nums[i] == nums[i - 1]) {
+                // deduplication
+                continue;
+            }
+            int left = 0; // left side possibly unequal neighboring corresponding state
+            for (int j = i - 1; j >= 0; --j) {
+                if (nums[j] > nums[i]) {
+                    left = 1;
+                    break;
+                } else if (nums[j] < nums[i]) {
+                    left = -1;
+                    break;
+                }
+            }
+            int right = 0; // right side possibly unequal neighboring corresponding state
+            for (int j = i + 1; j < n; ++j) {
+                if (nums[j] > nums[i]) {
+                    right = 1;
+                    break;
+                } else if (nums[j] < nums[i]) {
+                    right = -1;
+                    break;
+                }
+            }
+            if (left == right && left != 0) {
+                // at this time, index i is part of a peak or valley.
+                ++res;
+            }
+        }
+        return res;
+    }
+}
+```
+```cpp
+class Solution {
+public:
+    int countHillValley(vector<int>& nums) {
+        int res = 0;  // number of peaks and valleys
+        int n = nums.size();
+        for (int i = 1; i < n - 1; ++i) {
+            if (nums[i] == nums[i - 1]) {
+                // deduplication
+                continue;
+            }
+            int left = 0;  // left side possibly unequal neighboring
+                           // corresponding state
+            for (int j = i - 1; j >= 0; --j) {
+                if (nums[j] > nums[i]) {
+                    left = 1;
+                    break;
+                } else if (nums[j] < nums[i]) {
+                    left = -1;
+                    break;
+                }
+            }
+            int right = 0;  // right side possibly unequal neighboring
+                            // corresponding state
+            for (int j = i + 1; j < n; ++j) {
+                if (nums[j] > nums[i]) {
+                    right = 1;
+                    break;
+                } else if (nums[j] < nums[i]) {
+                    right = -1;
+                    break;
+                }
+            }
+            if (left == right && left != 0) {
+                // at this time, index i is part of a peak or valley.
+                ++res;
+            }
+        }
+        return res;
+    }
+};
+```
 ### Pseudocode
 
 
