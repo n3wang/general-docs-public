@@ -15,7 +15,11 @@ To modify this template [[daily-template]]
 |            |         |         |            |            |         |        |
 
 
-
+- Achieved at work?
+	- [ ] Doing a couple Term Quizzes => Target is 1 session.
+	- [ ] 1 DSA => Target is 3 cpp
+	- [ ] Significant progress in your card + 3 questions asked.
+	- [ ] Documenting and practicing a session in a specific language 
 - [ ] Leer la ❤️mantra y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA

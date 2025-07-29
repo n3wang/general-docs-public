@@ -56,7 +56,7 @@ mean absolute deviation:: is the average of the absolute deviations from the ari
 
 
 
-#### Sample Variance and Standard Deviation
+### Sample Variance and Standard Deviation
 
 Sample Variance and Standard Deviation
 
@@ -66,7 +66,20 @@ $$
 
 
 Note that for sample variance, the sum of the squared deviations is divided by $n-1$ instead of $n$.
+What is the bessel correction? :: Is when on Sample Variance we divide the sum of the squared deviations by `n-1` instead of `n`
 
+
+#### Problem
+
+Annual returns data: $30 \%, 12 \%, 25 \%, 20 \%, 23 \%$
+:p Calculate the sample variance and sample standard deviation.
+?x
+$$
+\begin{aligned}
+& \bar{X}=\frac{30+12+25+20+23}{5}=22 \% \\
+& s^2=\frac{(30-22)^2+(12-22)^2+(25-22)^2+(20-22)^2+(23-22)^2}{5-1}=44.5
+\end{aligned}
+$$
 
 
 
