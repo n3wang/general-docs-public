@@ -18,20 +18,19 @@ To modify this template [[daily-template]]
 
 - [ ] Leer la ❤️mantra y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
-	- [ ] 1: 
-	- [ ] 2: 
-	- [ ] 3: 
+	- [ ] 1: CFA
+	- [ ] 2: DSA 
+	- [ ] 3: Lecture Block - 
 - [ ] 🔬 Focus Lab : 1 [Block](https://app.focusmate.com/dashboard)  
 	- [ ] 1: Work on your inspiration or choose from [[2-current-lab-curriculum]]  
 	- [ ] 2: mover o comentar card - 2 + 1    Times a week per Project **(3-sla)**
 	- [ ] 3: Comentar en el grupo de discord/whatsapp/email **(4-med)**
 - [ ] Gym and Mind Trainning:  **(6-gym)**
-	- [ ] Go to Trainning at Gym
+	- [ ] Go to Trainning at Gym or at home with anime. 
 	- [ ] Elevate Training
 	- [ ] Duolingo Daily
 	- [ ] Anki ( 10 terms )  
 
-#### Tags Marked
 
 
 ---
@@ -40,9 +39,9 @@ To modify this template [[daily-template]]
 
 #### Mantra
 
-> A pesar de cualquier injusticias o deventajas voy a tomar mi venganza empujando tras mis limites para volverme ingeniero de clase mundial. 🌐
+> A pesar de cualquier injusticias o deventajas voy a tomar mi venganza empujando tras mis limites para volverme ingeniero de clase mundial cumpliendo con mis objetivos diarios 🌐
 
-> Colleccionar recursos en comics y flascards nativos en Obsidian🔨 En la comida voy a estar viendo CFA y dias remotos tambien. Construir buenas impresiones en personascon mi realibilidad y etica en el trabajo, repasando y terminando decks enteros de forma diaria para mejorar mis bases.
+> Somos los retenedores modernos, y voy a mejorar mis caracteristicas, habilidades unicas con mis habitos unicos. Obteniendo observaciones al disfrutas los procesos con dsa o colleccionando recursos en comics y flascards nativos en Obsidian🔨 Construire una buena impresion social realibilidad comunicacion frequente y etica en el trabajo.
 
 > Mi reliabilidad 🧑‍🔬 va a estar basado en que terminare card personales y del laburo con SLA de 2 dias con updates en comentarios
 

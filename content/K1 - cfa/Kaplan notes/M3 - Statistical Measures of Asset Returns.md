@@ -56,6 +56,17 @@ mean absolute deviation:: is the average of the absolute deviations from the ari
 
 
 
+#### Sample Variance and Standard Deviation
+
+Sample Variance and Standard Deviation
+
+$$
+s^2=\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}{n-1} \quad s=\sqrt{\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}{n-1}}
+$$
+
+
+Note that for sample variance, the sum of the squared deviations is divided by $n-1$ instead of $n$.
+
 
 
 
