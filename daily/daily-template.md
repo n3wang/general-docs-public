@@ -43,7 +43,7 @@ To modify this template [[daily-template]]
 
 #### Mantra
 
-> A pesar de cualquier injusticias o deventajas voy a tomar mi venganza empujando tras mis limites para volverme ingeniero de clase mundial cumpliendo con mis objetivos diarios 🌐
+> A pesar de cualquier injusticias o deventajas voy a tomar mi venganza empujando tras mis limites para volverme ingeniero de clase mundial cumpliendo con mis objetivos diarios. Youtube shorts y sus addiciones como netflix son cultos derrosivos implantados en la sociedad para limitar nuestros mejores versiones como heroes. Para que ellos puedan mantener su sociedad. 
 
 > Somos los retenedores modernos, y voy a mejorar mis caracteristicas, habilidades unicas con mis habitos unicos. Obteniendo observaciones al disfrutas los procesos con dsa o colleccionando recursos en comics y flascards nativos en Obsidian🔨 Construire una buena impresion social realibilidad comunicacion frequente y etica en el trabajo.
 
