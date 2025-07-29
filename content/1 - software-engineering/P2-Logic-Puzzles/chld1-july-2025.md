@@ -3,7 +3,8 @@
 
 :d difficulty
 :l https://leetcode.com/problems/count-good-triplet
-:t tags,tags2
+:t Array  大批, Enumeration  枚举
+
 
 给定一个整数 arr 和三个整数 a、 b 和 c。你需要找到好的三胞胎的数量。
 如果以下条件成立，则三元组 (arr[i], arr[j], arr[k]) 是好的 ：
