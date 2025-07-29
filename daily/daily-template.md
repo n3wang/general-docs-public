@@ -23,7 +23,7 @@ To modify this template [[daily-template]]
 - [ ] Leer la ❤️mantra y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA [[M3 - Statistical Measures of Asset Returns]]
-	- [ ] 2: DSA [[chld1-july-2025]]
+	- [ ] 2: DSA [[chld1-july-2025]] | [[chl1-graph-theory]]
 	- [ ] 3: Lecture Block - 
 - [ ] 🔬 Focus Lab : 1 [Block](https://app.focusmate.com/dashboard)  
 	- [ ] 1: Work on your inspiration or choose from [[2-current-lab-curriculum]]  
