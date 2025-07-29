@@ -108,6 +108,8 @@ public:
 
 
 
+- [ ] Remember to read english then chinese, and refer back if didnt memorize what it does. 
+
 ## Problem Name
 
 :d difficulty
