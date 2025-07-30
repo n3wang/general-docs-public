@@ -85,11 +85,8 @@ $$
 
 #### Questions
 
-details
 
-?p: prompt
-?x
-answer
+
 ##  Submodulo 2
 
 
