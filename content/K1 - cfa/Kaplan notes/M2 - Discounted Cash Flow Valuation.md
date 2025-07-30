@@ -463,10 +463,11 @@ Press IRR, then CPT
 x??
 
 
-Given a holding period return of R , the continuously compounded rate of return is:
+ Given a holding period return of R , the continuously compounded rate of return is:
 A) $e^R-1$.
 B) $\ln (1+R)$.
 C) $\ln (1+R)-1$.
+:p the continuously compounded rate  is...
 ??x
  $\ln (1+R)$
 
