@@ -20,6 +20,7 @@ To modify this template [[daily-template]]
 	- [ ] 1 DSA => Target is 3 cpp
 	- [ ] Significant progress in your card + 3 questions asked.
 	- [ ] Documenting and practicing a session in a specific language 
+	- [ ] Put a freecodecamp org playlist behind as playlist. / udemy, mit works as well.
 - [ ] Leer la ❤️mantra y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA [[M3 - Statistical Measures of Asset Returns]]
