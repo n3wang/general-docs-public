@@ -125,5 +125,10 @@ Leptokurtic (kurtosis > 3) is more peaked with fatter tails (more extreme outlie
 4
 
 
+sample problem 1::def
+
+sample problem 2::def
+
+
 
 
