@@ -82,12 +82,48 @@ $$
 $$
 
 
+Target Downside Deviation: Example
+Annual returns data: $30 \%, 12 \%, 25 \%, 20 \%, 23 \%$
+Using a target of $24 \%$, what is the target downside deviation?
+?x
+$$
+\begin{aligned}
+& 30 \%-24 \%=6 \% \\
+& 12 \%-24 \%=-12 \% \\
+& 25 \%-24 \%=1 \% \\
+& 20 \%-24 \%=-4 \% \\
+& 23 \%-24 \%=-1 \%
+\end{aligned}
+$$
 
-#### Questions
 
 
 
-##  Submodulo 2
+
+
+##  Module 3.2: Skewness, Kurtosis, and Correlation
+
+#### Skeweness
+
+Positive Skew = Right Skew
+Positive skew has outliers in the right tail.
+Skew absolute values > 0.5 are significant.
+Mean is most affected by outliers.
+
+
+| Positive Skew                        | Negative Skew                        |
+| ------------------------------------ | ------------------------------------ |
+| ![[Pasted image 20250731203746.png]] | ![[Pasted image 20250731203754.png]] |
+
+
+What does Positive or Negative Skew mean?
+
+
+Kurtosis
+This measures the degree to which a distribution is more or less peaked than a normal distribution.
+Leptokurtic (kurtosis > 3) is more peaked with fatter tails (more extreme outliers).
+4
+
 
 
 
