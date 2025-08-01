@@ -12,9 +12,27 @@ tags:
 	2. These are toDarkarior448!
 	3. be done on parallel with custom projects, such as react tutorial + a react application that you will be developing on the side.
 	4. CONTRIBUTOR MINDSET: Learn things not from a user perspective including programing, but "How can I use, improve and contribute to this tool?" mindset
+4. **Work and mantain long term Unique Projects:** If you had learnt (or at least increase some of your confidence) is by tackling different type of architectures and type of applications in general.
+	
 
-#### Copying Software Technique
+#### Working on Unique Projects
 
+
+
+| Category                   | Stack                       | Projects                             |
+| -------------------------- | --------------------------- | ------------------------------------ |
+| CLI                        | Node                        | 1-Mastery CLI                        |
+| Full Stack                 | Angular, Kubernetes, Spring | 2-The Indie Gallery                  |
+| Flutter Mobile Application |                             | 3-Solo Leveling Pomodoro Application |
+| Local 2D Gmae              | Unity, C#                   | 4-Math Platformer                    |
+| 3D Game 3rd person game.   | C++                         | 5-Language Soulslike                 |
+| Flutter Videogame          | Flutter Flame               | 6-Party!                             |
+| React UI Library           |                             |                                      |
+| Python Datascience Library | Python, Datascience         | recommendation-engine                |
+| Simulation Library         | Rust, Graphics              | genetic-simulation-engine            |
+|                            |                             |                                      |
+
+Some stacks that sort of dont wanna see again are python and react, but the ideal would be to continue working on them. 
 - 
 
 ### Learning Path
