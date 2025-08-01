@@ -23,14 +23,15 @@ tags:
 | -------------------------- | --------------------------- | ------------------------------------ |
 | CLI                        | Node                        | 1-Mastery CLI                        |
 | Full Stack                 | Angular, Kubernetes, Spring | 2-The Indie Gallery                  |
-| Flutter Mobile Application |                             | 3-Solo Leveling Pomodoro Application |
-| Local 2D Gmae              | Unity, C#                   | 4-Math Platformer                    |
+| Mobile Application         | Flutter                     | 3-Solo Leveling Pomodoro Application |
+| PC Local Game              | Unity, C#                   | 4-Math/Formulation Platformer        |
 | 3D Game 3rd person game.   | C++                         | 5-Language Soulslike                 |
-| Flutter Videogame          | Flutter Flame               | 6-Party!                             |
-| React UI Library           |                             |                                      |
-| Python Datascience Library | Python, Datascience         | recommendation-engine                |
-| Simulation Library         | Rust, Graphics              | genetic-simulation-engine            |
-|                            |                             |                                      |
+| Flutter Videogame          | Flutter Flame               | 6-mobile-lan-party-game              |
+| React UI Library           | React, Typescript           | 7-opinionated-ui-library             |
+| Python Datascience Library | Python, Datascience         | 8-recommendation-engine              |
+| Simulation Library         | Rust, Graphics              | 9-genetic-simulation-engine          |
+| Compiler Sandbox           | React,                      | 10-algorithmic-competition-platform  |
+
 
 Some stacks that sort of dont wanna see again are python and react, but the ideal would be to continue working on them. 
 - 
