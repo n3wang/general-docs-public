@@ -21,7 +21,7 @@ To modify this template [[daily-template]]
 	- [ ] Significant progress in your card + 3 questions asked.
 	- [ ] Documenting and practicing a session in a specific language 
 	- [ ] Put a freecodecamp org playlist behind as playlist. / udemy, mit works as well.
-- [ ] Leer la ❤️mantra y modificar un poco
+- [ ] Leer la [mantra](#Mantra) y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA [[M3 - Statistical Measures of Asset Returns]]
 	- [ ] 2: DSA [[chld1-july-2025]] | [[chl1-graph-theory]]
@@ -48,7 +48,7 @@ For morality modification refer to [[5 - Religion of Creation]]
 
 > A pesar de cualquier injusticias o deventajas voy a tomar mi venganza empujando tras mis limites para volverme ingeniero de clase mundial cumpliendo con mis objetivos diarios. Shorts y netflix son cultos derrosivos implantados en la sociedad para limitar nuestros mejores versiones. 
 
-> Somos los retenedores modernos, y voy a mejorar mis caracteristicas, habilidades unicas con mis habitos unicos. Obteniendo observaciones al disfrutas los procesos con dsa o colleccionando recursos en comics y flascards nativos en Obsidian🔨 Construire una buena impresion social realibilidad comunicacion frequente y etica en el trabajo.
+> Somos los retenedores modernos, y voy a mejorar mis caracteristicas, habilidades unicas con mis habitos unicos. Voy a volverme un experto obteniendo observaciones al disfrutas los procesos con dsa o colleccionando recursos en comics y flascards nativos en Obsidian🔨 Construire una buena impresion social realibilidad comunicacion frequente y etica en el trabajo.
 
 > Mi reliabilidad 🧑‍🔬 va a estar basado en que terminare card personales y del laburo con SLA de 2 dias con updates en comentarios
 
