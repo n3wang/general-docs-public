@@ -185,6 +185,30 @@ x??
 ## Module 4.1: Probability Models, Expected Values, and Bayes' Formula
 
 
+#### Expected Values Simple Excercise
+Expected Value
+The expected value of a random variable is the probability-weighted average of the possible outcomes of the variable.
+
+$$
+\begin{aligned}
+& E(X)=\sum P\left(x_i\right) x_i=P\left(x_1\right) x_1+P\left(x_2\right) x_2+\ldots+P\left(x_n\right) x_n \\
+& P\left(x_i\right)=\text { probability of outcome } x_i
+\end{aligned}
+$$
+
+Expected Value
+Example: EPS for Ron's Stores
+- 10\% probability EPS = £1.80
+- $20 \%$ probability EPS = £1.60
+- 40\% probability EPS = £1.20
+- $30 \%$ probability EPS = £1.00
+
+:p What is the Expected EPS:?
+??x
+$$
+=0.10(1.80)+0.20(1.60)+0.40(1.20)+0.30(1.00)=£ 1.28
+$$
+x??
 
 
 
