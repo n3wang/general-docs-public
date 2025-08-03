@@ -2,7 +2,9 @@
 Desc: Style obsidian-notes to look like academic papers when exported as pdf.
       Include this file in your obsidian snippets folder and activate within obsidian.
 
-Auth: Nicklas Vraa
+Original from: Nicklas Vraa
+Forked from: Nelson Wang
+Auth: Nelson Wang
 */
 
 @media print {
@@ -25,7 +27,7 @@ Auth: Nicklas Vraa
     }
     p {
         font-family: "Latin Modern Roman" !important;
-        font-size: 10pt !important;
+        font-size: 12pt !important;
         text-align: justify !important;
         line-height: 1.2 !important;
         margin-top: 5px !important;
@@ -37,6 +39,7 @@ Auth: Nicklas Vraa
     em {
         font-style: italic !important;
         color: black !important;
+        font-size: 11pt !important;
     }
 
     /* Header styling and automatic numbering. --------------------------------------------- */
@@ -145,6 +148,7 @@ Auth: Nicklas Vraa
     table {
         font-family: Times !important;
         font-size: 10pt !important;
+        /* font-size: .8em !important; */
         text-align: center !important;
         margin: 10px auto 5px !important;
         border-top: 1px solid #292929 !important;
@@ -166,7 +170,7 @@ Auth: Nicklas Vraa
     ul, ol, dl {
         page-break-before: avoid !important;
         font-family: "Latin Modern Roman" !important;
-        font-size: 11pt !important;
+        /* font-size: 11pt !important; */
         line-height: 1.1 !important;
         margin-top: 0px !important;
         padding-top: 0px !important;

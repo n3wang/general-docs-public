@@ -6,10 +6,28 @@ Desc: Display numbers for headings, without including them in the file.
 Auth: Nelson Wang
 ----------------------------------------------------------------------------- */
 
+.HyperMD-header-1 {
+  /* Title. */
+  font-family: "Latin Modern Roman Caps" !important;
+  text-align: center !important;
+  font-size: 18pt !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
+
+.HyperMD-header-6 {
+  /* Subtitle. */
+  font-family: "Latin Modern Roman Caps" !important;
+  text-align: center !important;
+  font-size: 14pt !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
 /* Numbered headings. ------------------------------------------------------- */
 .cm-content {
-  counter-reset: H2live H3live H4live H5live H6live !important;
-  
+  counter-reset: H2live H3live H4live H5live !important;
 }
 .HyperMD-header-1 {
   font-family: MJXZERO, MJXTEX !important;
@@ -25,9 +43,6 @@ Auth: Nelson Wang
   content: counter(H2live) ".\0000a0\0000a0\0000a0" !important;
 }
 
-/* Edit mode */
-.cm-line {
-}
 
 /* Target images inside HyperMD quotes */
 .HyperMD-quote img {
@@ -47,7 +62,7 @@ table {
   /* font-family: MJXZERO, MJXTEX !important; */
   font-size: 10pt !important;
   text-align: center !important;
-  margin: 5px auto  !important;
+  margin: 5px auto !important;
   border-top: 1px solid #292929 !important;
   border-bottom: 1px solid #292929 !important;
 }
@@ -62,12 +77,12 @@ td {
   border: none !important;
 }
 
-tbody{
-    border: none !important;
+tbody {
+  border: none !important;
   padding: 2px 5px 5px 6px !important;
 }
 
-.cm-table-widget + .HyperMD-quote span:nth-of-type(2){
+.cm-table-widget + .HyperMD-quote span:nth-of-type(2) {
   /* display: block; */
   font-size: 1em;
   color: gray;
@@ -77,9 +92,9 @@ tbody{
   /* text-align: center; */
 }
 
-.cm-table-widget + .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before
-{
-     display: none !important;
+.cm-table-widget + .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  display: none !important;
 }
 
 /* Expand the wrapper that constrains the table */
@@ -88,18 +103,19 @@ tbody{
   max-width: 100% !important;
 }
 
-
 /* Optional: expand individual cell wrappers */
 .cm-table-widget .table-cell-wrapper {
   width: 100% !important;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 /* Optional: allow contents to break out */
 .cm-table-widget th,
 .cm-table-widget td {
-  white-space: nowrap !important;
+  white-space: normal !important;
   text-align: center;
+  word-wrap: break-word;
+  max-width: 400px;
 }
 
 .math-block + .HyperMD-quote span:nth-of-type(2) {
@@ -111,8 +127,6 @@ tbody{
   text-align: center;
   padding-right: 5em;
 }
-
-
 
 .HyperMD-quote:has(img) + .HyperMD-quote span.cm-quote {
   display: block;
@@ -151,11 +165,11 @@ tbody{
     ".\0000a0\0000a0\0000a0" !important;
 }
 
-.HyperMD-header-6:before {
+/* .HyperMD-header-6:before {
   counter-increment: H6live !important;
   content: counter(H2live) "." counter(H3live) "." counter(H4live) "." counter(H5live) "."
     counter(H6live) ".\0000a0\0000a0\0000a0" !important;
-}
+} */
 
 .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
   padding-right: 2px !important;
