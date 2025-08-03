@@ -119,15 +119,82 @@ Mean is most affected by outliers.
 What does Positive or Negative Skew mean?
 
 
-Kurtosis
+#### Kurtosis
 This measures the degree to which a distribution is more or less peaked than a normal distribution.
 Leptokurtic (kurtosis > 3) is more peaked with fatter tails (more extreme outliers).
-4
+
+![[Pasted image 20250803180844.png]]
+
+- **Kurtosis** = concentration in tails (how “outlier-prone” it is).
+- **Leptokurtic = risky** due to **extreme outcomes**.
+
+#### Covariance
+
+$$
+s_{X, Y}=\frac{\sum_{i=1}^n\left[\left(X_i-\bar{X}\right)\left(Y_i-\bar{Y}\right)\right]}{n-1}
+$$
+
+| Term      | Meaning                       |
+| --------- | ----------------------------- |
+| $$X_i$$   | Each value of variable X      |
+| $\bar{X}$ | Mean of variable X            |
+| $Y_i$     | Each value of variable Y      |
+| $\bar{Y}$ | Mean of variable Y            |
+| n         | Number of paired observations |
+:p What Is Sample Covariance? Which is the formula? what it means that is positive or negative? What letter is used to be denoted?
+?x
+It tells us how two variables move together:
+- Positive covariance → when one goes up, the other tends to go up.
+- Negative covariance → when one goes up, the other tends to go down.
+$$
+s_{X, Y}=\frac{\sum_{i=1}^n\left[\left(X_i-\bar{X}\right)\left(Y_i-\bar{Y}\right)\right]}{n-1}
+$$
 
 
-sample problem 1::def
+#### Correlation
+- Correlation does not imply causation.
+- Variables with strong nonlinear relationships may have a correlation near zero.
+- Variables may exhibit spurious correlation:
+- Correlation may result from chance.
+- Both variables may be related to a third variable.
 
-sample problem 2::def
+$$
+\rho_{X, Y}=\frac{s_{X, Y}}{s_X s_Y}
+$$
+- No units-values range from +1 , perfect positive correlation, to -1 , perfect negative correlation
+- Correlation of zero indicates no linear relationship
+
+
+Calculate the correlation of returns between Stocks A and B ( $\rho_{A B}$ ) given the following data:
+- $\mathrm{s}^2{ }_{\mathrm{A}}=0.0028$
+- $\mathrm{s}^2{ }_{\mathrm{B}}=0.0124$
+- $\mathrm{s}_{\mathrm{A}, \mathrm{B}}=0.0058$
+:p Calculate the correlation of returns between Stocks A and B
+??x
+0.9842
+$$
+\rho_{A B}=\frac{s_{A B}}{s_A s_B}
+$$
+
+$$
+\rho_{A B}=\frac{s_{A B}}{s_A s_B}=\frac{0.0058}{0.0529 \times 0.1114}=0.9842
+$$
+x??
+
+
+## Module 4.1: Probability Models, Expected Values, and Bayes' Formula
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
