@@ -210,6 +210,69 @@ $$
 $$
 x??
 
+#### Probability Tree
+Expected Value
+A probability tree is used to show the probabilities of various outcomes. Conditional expected values are contingent on the outcome of some other event (e.g., on the arrival of new information).
+Ron's Stores Example:
+- Probability of a good economy: 60\%
+- If good: EPS \$1.80 (30\% probability) or \$1.70 (70\% probability)
+- Probability of a poor economy: $40 \%$
+- If poor: EPS \$1.30 (60\% probability) or \$1.00 (40\% probability)
+:p Draw the Probability Tree of the thing above.
+?x
+![[Pasted image 20250803184053.png]]
+
+
+#### Bayers Formula
+Bayes' formula is used to update a given set of prior probabilities for a given event in response to the arrival of new information.
+
+$$
+P(A \mid B)=\frac{P(B \mid A)^{\prime} P(A)}{P(B)}
+$$
+
+
+The joint probability of A and B , divided by the unconditional probability of B
+- $P(B)=P(B \mid A) \times P(A)+P\left(B \mid A^C\right) \times P\left(A^C\right)$
+- $P(B \mid A)=$ probability of $B$, given $A$ has occurred
+- $P\left(B \mid A^C\right)=$ probability of $B$, given $A$ has not occurred
+
+:p Redraw the Bayers Formula and re explain what each item represents
+?x
+See above
+
+#### Bayers Formula Excercise
+Example:
+- 60\% probability the economy will outperform
+- If it outperforms, there is $70 \%$ probability the stock will go up and $30 \%$ probability it will go down
+40\% probability the economy will underperform
+- If it underperforms, there is $20 \%$ probability the stock will go up and $80 \%$ probability it will go down
+:p Given that the stock increased in value, calculate the probability that the economy outperformed.
+?x
+84%
+![[Pasted image 20250803184656.png]]
+Probability that it gained and outputermoed / Probability gained (aggregated)
+Using the bayers formula then this is how it would look like:
+![[Pasted image 20250803185038.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
