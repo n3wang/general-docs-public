@@ -1,11 +1,11 @@
 
-| Materia                        | Proyecto                                          |
-| ------------------------------ | ------------------------------------------------- |
-| ANALISIS MATEMATICO I          | MCLI Soporte por y problemas soluciones dynamicos |
-| SISTEMAS DIGITALES             |                                                   |
-| INTRODUCCION A LA PROGRAMACION | Desarrollar soporte diferentes lenguajes.         |
-| INTRODUCCION A LA INGENIERIA   |                                                   |
-| QUIMICA GENERAL                |                                                   |
+| Materia                        | Proyecto                                                                              |
+| ------------------------------ | ------------------------------------------------------------------------------------- |
+| ANALISIS MATEMATICO I          | MCLI Soporte por y problemas soluciones dynamicos                                     |
+| SISTEMAS DIGITALES             |                                                                                       |
+| INTRODUCCION A LA PROGRAMACION | Desarrollar soporte diferentes lenguajes.                                             |
+| INTRODUCCION A LA INGENIERIA   |                                                                                       |
+| QUIMICA GENERAL                | chem library for js. (why would you ever use this idk. but stores constants and etc.) |
 
 
 - ANALISIS MATEMATICO I
