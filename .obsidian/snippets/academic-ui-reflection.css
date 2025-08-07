@@ -79,6 +79,7 @@ th {
 }
 td {
   border: none !important;
+  text-align: start !important;
 }
 
 tbody {

@@ -24,6 +24,8 @@ La idea es de conseguir tantas certificaciones posibles.
 | ANALISIS MATEMATICO II                      |                                                   |
 | FISICA I                                    |                                                   |
 | SISTEMAS DE REPRESENTACION PARA ELECTRONICA |                                                   |
+| ARQUITECTURA DE COMPUTADORES                |                                                   |
+|                                             |                                                   |
 
 
 - ANALISIS MATEMATICO I
