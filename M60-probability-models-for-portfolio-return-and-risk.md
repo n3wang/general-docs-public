@@ -8,6 +8,17 @@ $$
 
 
 
+$$
+\operatorname{Cov}\left(\mathrm{R}_{\mathrm{i}}, \mathrm{R}_{\mathrm{j}}\right)=\mathrm{E}\left\{\left[\mathrm{R}_{\mathrm{i}}-\mathrm{E}\left(\mathrm{R}_{\mathrm{i}}\right)\right]\left[R_j-\mathrm{E}\left(\mathrm{R}_{\mathrm{j}}\right)\right]\right\}
+$$
+?x
+Properties of covariance:
+- Ranges from negative to positive infinity
+- Positive covariance: returns tend to move in the same direction
+- Negative covariance: returns tend to move in opposite directions
+
+
+
 
 
 
