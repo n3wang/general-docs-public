@@ -16,10 +16,10 @@ To modify this template [[daily-template]]
 
 
 - Achieved at work?
-	- [ ] Doing a couple Term Quizzes => Target is 1 session.
+	- [ ] Complete the next posible poc of your card and present it.
 	- [ ] 1 DSA => Target is 3 cpp
 	- [ ] Significant progress in your card + 3 questions asked.
-	- [ ] Documenting and practicing a session in a specific language 
+	- [ ] Documenting and increasing practice in a specific framework 
 	- [ ] Put a freecodecamp org playlist behind as playlist. / udemy, mit works as well.
 - [ ] Leer la [mantra](#Mantra) y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
