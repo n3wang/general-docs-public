@@ -46,6 +46,60 @@ Complete the following:
 x??
 
 
+Proposición 1.10 Las siguientes son tautologías:
+
+Leyes de De Morgan: Mostra un ejemplo de ley de morgan en los siguientes caos
+- $\overline{p \wedge q} \Longleftrightarrow ...., \quad \overline{p \vee q} \Longleftrightarrow ...$.
+:p completa lo faltante dando ejemplo la ley de Morgan
+?x
+- $\overline{p \wedge q} \Longleftrightarrow \bar{p} \vee \bar{q}, \quad \overline{p \vee q} \Longleftrightarrow \bar{p} \wedge \bar{q}$.
+
+
+- Conmutatividad.
+:p completa lo faltante dando ejemplo la ley de commutatividad
+?x
+$$
+\begin{aligned}
+& -\operatorname{del} \vee: p \vee q \Longleftrightarrow q \vee p . \\
+& -\operatorname{del} \wedge: p \wedge q \Longleftrightarrow q \wedge p .
+\end{aligned}
+$$
+
+
+
+- Asociatividad.
+
+$$
+\begin{aligned}
+& -\operatorname{del} \vee: p \vee(q \vee r) \Longleftrightarrow(p \vee q) \vee r . \\
+& -\operatorname{del} \wedge: p \wedge(q \wedge r) \Longleftrightarrow(p \wedge q) \wedge r .
+\end{aligned}
+$$
+
+- Distributividad.
+- del $\wedge$ con respecto al $\vee$ :
+$$
+p \wedge(q \vee r) \Longleftrightarrow(p \wedge q) \vee(p \wedge r), \quad(q \vee r) \wedge p \Longleftrightarrow(q \wedge p) \vee(r \wedge p) .
+$$
+- del $\vee$ con respecto al $\wedge$ :
+$$
+p \vee(q \wedge r) \Longleftrightarrow(p \vee q) \wedge(p \vee r), \quad(q \wedge r) \vee p \Longleftrightarrow(q \vee p) \wedge(r \vee p) .
+$$
+
+
+- Transitividad.
+- del $\Rightarrow$ :
+$$
+(p \Rightarrow q) \wedge(q \Rightarrow r) \Longrightarrow(p \Rightarrow r)
+$$
+- de la $\Longleftrightarrow$ :
+$$
+(p \Longleftrightarrow q) \wedge(q \Longleftrightarrow r) \Longrightarrow(p \Longleftrightarrow r)
+$$
+
+
+
+
 
 
 
