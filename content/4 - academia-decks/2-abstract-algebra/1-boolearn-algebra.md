@@ -76,7 +76,17 @@ $$
 \end{aligned}
 $$
 
-- Distributividad.
+#### Distributividad.
+:p completa lo faltante dando ejemplo la ley de Distributividad
+- del $\wedge$ con respecto al $\vee$ :
+$$
+p \wedge(q \vee r) \Longleftrightarrow...., \quad(q \vee r) \wedge p \Longleftrightarrow.... .
+$$
+- del $\vee$ con respecto al $\wedge$ :
+$$
+p \vee(q \wedge r) \Longleftrightarrow..., \quad(q \wedge r) \vee p \Longleftrightarrow.....
+$$
+??x
 - del $\wedge$ con respecto al $\vee$ :
 $$
 p \wedge(q \vee r) \Longleftrightarrow(p \wedge q) \vee(p \wedge r), \quad(q \vee r) \wedge p \Longleftrightarrow(q \wedge p) \vee(r \wedge p) .
@@ -85,9 +95,9 @@ $$
 $$
 p \vee(q \wedge r) \Longleftrightarrow(p \vee q) \wedge(p \vee r), \quad(q \wedge r) \vee p \Longleftrightarrow(q \vee p) \wedge(r \vee p) .
 $$
+x??
 
-
-- Transitividad.
+#### Transitividad.
 - del $\Rightarrow$ :
 $$
 (p \Rightarrow q) \wedge(q \Rightarrow r) \Longrightarrow(p \Rightarrow r)
@@ -96,6 +106,16 @@ $$
 $$
 (p \Longleftrightarrow q) \wedge(q \Longleftrightarrow r) \Longrightarrow(p \Longleftrightarrow r)
 $$
+??x
+del $\Rightarrow$ :
+$$
+(p \Rightarrow q) \wedge(q \Rightarrow r) \Longrightarrow ....
+$$
+- de la $\Longleftrightarrow$ :
+$$
+(p \Longleftrightarrow q) \wedge(q \Longleftrightarrow r) \Longrightarrow ....
+$$
+x??
 
 
 
