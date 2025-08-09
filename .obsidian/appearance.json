@@ -1,1 +1,7 @@
-{}
+{
+  "enabledCssSnippets": [
+    "academic-ui-reflection",
+    "academic-pdf-export"
+  ],
+  "showViewHeader": false
+}

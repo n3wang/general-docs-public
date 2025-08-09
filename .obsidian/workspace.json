@@ -10,19 +10,39 @@
           {
             "id": "48973c3e85f25212",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/3 - teach-collection/0 - index.md",
+                "file": "daily/2025-08-09.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "0 - index"
+              "title": "2025-08-09"
+            }
+          },
+          {
+            "id": "6c1b0c5bb81d53fd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "daily/daily-template.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "daily-template"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,13 +115,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/3 - teach-collection/0 - index.md",
+                "file": "daily/daily-template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0 - index"
+              "title": "Outline of daily-template"
             }
           },
           {
@@ -114,7 +134,8 @@
               "title": "Notes Review Queue"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -133,12 +154,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48973c3e85f25212",
+  "active": "6c1b0c5bb81d53fd",
   "lastOpenFiles": [
+    "daily/2025-08-09.md",
+    "content/K1 - cfa/studiable/LM Template.md",
+    "content/3 - teach-collection/0 - index.md",
     "content/3 - teach-collection/1 - Techniques and Checklists.md",
     "5 - Teaching/4-class-prep-plan.md",
     "5 - Teaching/3 - Class Structure.md",
-    "daily/2025-08-09.md",
     "5 - Teaching/4 - Daily Chinese Teaching/0 - Index.md",
     "img/jpmorgan jobs.png",
     "img/Pasted image 20250809010644.png",
@@ -169,8 +192,6 @@
     "daily/2025-07-17.md",
     "daily/2025-07-14.md",
     "daily/2025-07-11.md",
-    "daily/2025-07-10.md",
-    "daily/2025-07-09.md",
     "daily",
     "content/4 - academia-decks/2-abstract-algebra",
     "content/1 - software-engineering/P2-Logic-Puzzles",
