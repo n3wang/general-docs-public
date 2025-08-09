@@ -21,6 +21,7 @@ To modify this template [[daily-template]]
 	- [ ] Significant progress in your card + 3 questions asked.
 	- [ ] Documenting and increasing practice in a specific framework 
 	- [ ] Put a freecodecamp org playlist behind as playlist. / udemy, mit works as well.
+	- [ ] 100 flexiones + 100 abdominales 
 - [ ] Leer la [mantra](#Mantra) y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA [[M3 - Statistical Measures of Asset Returns]]

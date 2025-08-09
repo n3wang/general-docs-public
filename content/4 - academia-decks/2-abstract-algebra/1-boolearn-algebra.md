@@ -119,14 +119,14 @@ x??
 
 
 #### Preoposiciones
+Si la proposicion (p ∧ q) ∨ p es falsa, necesariamente q es falsa.
+?x
+$(p∧q)∨p(p\land q)\lor p es pp (absorción).$ 
+Si es falsa ⇒ pp es falsa; nada fuerza a qq. **Falso**.
 
-
-¡Vamos uno por uno (27–41)!  
-Convención: F=F= falso, V=V= verdadero, ¬,∧,∨,⇒,⇔\neg, \land, \lor, \Rightarrow, \Leftrightarrow como usual.
-
-27. (p∧q)∨p(p\land q)\lor p es pp (absorción). Si es falsa ⇒ pp es falsa; nada fuerza a qq. **Falso**.
-    
-28. p⇒F≡¬pp\Rightarrow F \equiv \neg p. No es “siempre falsa”; es verdadera cuando pp es falsa. **Falso**.
+La proposici´on p =⇒ F es siempre falsa.
+?x
+$p⇒F≡¬pp\Rightarrow F \equiv \neg p$. No es “siempre falsa”; es verdadera cuando pp es falsa. **Falso**.
     
 29. p⇒¬p≡¬pp\Rightarrow \neg p \equiv \neg p. Verdadera si pp es falsa y falsa si pp es verdadera. No es “siempre falsa”. **Falso**.
     
