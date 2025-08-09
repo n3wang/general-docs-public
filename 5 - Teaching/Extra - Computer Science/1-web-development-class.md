@@ -3,7 +3,7 @@
 Course 1 
 
 - [ ] Requires to collect all students emails
-- [ ] 
+
 
 We wont go very deep into the contents and stick with:
 https://onecompiler.com/html/3x2zp2yd7

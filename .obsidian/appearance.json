@@ -3,5 +3,5 @@
     "academic-ui-reflection",
     "academic-pdf-export"
   ],
-  "showViewHeader": false
+  "showViewHeader": true
 }

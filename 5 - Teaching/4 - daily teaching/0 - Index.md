@@ -14,3 +14,8 @@ You can follow the same pattern when it comes to teaching.
 
 
 - Add names to context and refer to ask a random student everytime to ask. (to simulate that realism)
+
+
+##### Making University be worth the 100usd per 4 classes and homeworks.
+
+Create the local slides decks, and prepare it before. 

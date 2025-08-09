@@ -21,16 +21,17 @@ To modify this template [[daily-template]]
 	- [ ] Significant progress in your card + 3 questions asked.
 	- [ ] Documenting and increasing practice in a specific framework 
 	- [ ] Put a freecodecamp org playlist behind as playlist. / udemy, mit works as well.
-	- [ ] 100 flexiones + 100 abdominales 
+	- [ ] Goal: 100 flexiones + 100 abdominales (Do as many as you can.)
 - [ ] Leer la [mantra](#Mantra) y modificar un poco
 - [ ] 📑 learning [Focus](https://app.focusmate.com/sessions) (2 checks)/pomodoro (1 check) from [[1-current-learning-curriculum]] **(5-SL)**
 	- [ ] 1: CFA [[M3 - Statistical Measures of Asset Returns]]
 	- [ ] 2: DSA [[chld1-july-2025]] | [[chl1-graph-theory]]
 	- [ ] 3: Lecture Block - 
 - [ ] 🔬 Focus Lab : 1 [Block](https://app.focusmate.com/dashboard)  
-	- [ ] 1: Work on your inspiration or choose from [[2-current-lab-curriculum]]  
+	- [ ] 1: Work on your inspiration or choose from [[2-current-lab-curriculum]]  (Ideally next erp)
 	- [ ] 2: mover o comentar card - 2 + 1    Times a week per Project **(3-sla)**
 	- [ ] 3: Comentar en el grupo de discord/whatsapp/email **(4-med)**
+	- [ ] 4: Continue working for a hackathon/game-jam with the objective of building for your classes.
 - [ ] Gym and Mind Trainning:  **(6-gym)**
 	- [ ] Go to Trainning at Gym or at home with anime. 
 	- [ ] Elevate Training
