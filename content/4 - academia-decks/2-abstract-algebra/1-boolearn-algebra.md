@@ -118,7 +118,45 @@ $$
 x??
 
 
+#### Preoposiciones
 
+
+¡Vamos uno por uno (27–41)!  
+Convención: F=F= falso, V=V= verdadero, ¬,∧,∨,⇒,⇔\neg, \land, \lor, \Rightarrow, \Leftrightarrow como usual.
+
+27. (p∧q)∨p(p\land q)\lor p es pp (absorción). Si es falsa ⇒ pp es falsa; nada fuerza a qq. **Falso**.
+    
+28. p⇒F≡¬pp\Rightarrow F \equiv \neg p. No es “siempre falsa”; es verdadera cuando pp es falsa. **Falso**.
+    
+29. p⇒¬p≡¬pp\Rightarrow \neg p \equiv \neg p. Verdadera si pp es falsa y falsa si pp es verdadera. No es “siempre falsa”. **Falso**.
+    
+30. Si pp es falsa, p⇒qp\Rightarrow q es verdadera (regla del antecedente falso). **Verdadero**.
+    
+31. p⇒qp\Rightarrow q es verdadera y pp es verdadera ⇒ por modus ponens, qq es verdadera. **Verdadero**.
+    
+32. p⇒(q⇒r)p\Rightarrow (q\Rightarrow r) verdadera y pp verdadera ⇒ q⇒rq\Rightarrow r verdadera. De ahí no se sigue rr (podría ser qq falsa). **Falso**.
+    
+33. (p⇒q)⇒r(p\Rightarrow q)\Rightarrow r falsa ⇒ antecedente verdadero y rr falsa ⇒ p⇒qp\Rightarrow q verdadera. Con pp verdadera, por modus ponens qq verdadera. **Verdadero**.
+    
+34. p⇔V≡pp\Leftrightarrow V \equiv p. Tienen el mismo valor. **Verdadero**.
+    
+35. p⇔F≡¬pp\Leftrightarrow F \equiv \neg p. Y ¬p∨F≡¬p\neg p \lor F \equiv \neg p. Son equivalentes. **Verdadero**.
+    
+36. (p⇔q)⇒(p⇒q)(p\Leftrightarrow q)\Rightarrow(p\Rightarrow q) es tautología: si pp y qq tienen el mismo valor, p⇒qp\Rightarrow q resulta verdadera; si el antecedente es falso, toda la implicación es verdadera. **Verdadero**.
+    
+37. (r⇒p)∧(p⇒q)(r\Rightarrow p)\land(p\Rightarrow q) verdadera ⇒ por silogismo hipotético, r⇒qr\Rightarrow q. **Verdadero**.
+    
+38. (¬q⇒¬p)∧(q⇒r)⇒(r⇒¬p)(\neg q\Rightarrow \neg p)\land(q\Rightarrow r)\Rightarrow(r\Rightarrow \neg p) **no** es tautología. Contraej.: p=T,q=T,r=Tp=T,q=T,r=T: antecedente verdadero y r⇒¬pr\Rightarrow\neg p es T⇒FT\Rightarrow F (falsa). **Falso**.
+    
+39. (p⇒q)⇔(¬p⇒¬q)(p\Rightarrow q)\Leftrightarrow(\neg p\Rightarrow \neg q) compara con el **inverso** (no con la contraposición). No son equivalentes siempre. Ej.: p=F,q=Tp=F,q=T: p⇒q=Tp\Rightarrow q=T, ¬p⇒¬q=T⇒F=F\neg p\Rightarrow \neg q= T\Rightarrow F=F. **Falso**.
+    
+40. ¬(p⇒q)≡p∧¬q\neg(p\Rightarrow q)\equiv p\land \neg q, no p∧qp\land q. **Falso**.
+    
+41. ¬(p⇒q)\neg(p\Rightarrow q) no es ¬q⇒¬p\neg q\Rightarrow \neg p (eso es la contraposición de p⇒qp\Rightarrow q, equivalente al original). La negación es p∧¬qp\land \neg q. **Falso**.
+    
+
+**Resumen rápido:**  
+27 F, 28 F, 29 F, 30 V, 31 V, 32 F, 33 V, 34 V, 35 V, 36 V, 37 V, 38 F, 39 F, 40 F, 41 F.
 
 
 
