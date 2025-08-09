@@ -7,4 +7,10 @@ Things that can be handled on the daily basis:
 
 - Book Reports
 - Algorithms
-- 
+- After your classes from University of Palermo e.g. Algebra...and then attempt with other classes. Perhaps using Obsidian Slides? it could work.
+
+
+You can follow the same pattern when it comes to teaching. 
+
+
+- Add names to context and refer to ask a random student everytime to ask. (to simulate that realism)
