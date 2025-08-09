@@ -114,6 +114,9 @@ From the book
 - 指数 zhishu:: Exponent
 - 幅员辽阔Fúyuán liáokuò:: Vast territory
 - 芹菜 -  菠菜 - 茄子::Qíncài:: - Bōcài - qiézǐ
+- 摄氏度 - shèshìdù:: Celsius
+- 省略 shěngluè ::Omitted
+- 含义 hányì::Meaning
 
 6/21 => Test.
 
